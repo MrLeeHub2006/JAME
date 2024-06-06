@@ -1,65 +1,69 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en" data-bs-theme="light" id="html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clinica Veterinaria Ciudad Canina</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="header-container">
-            <div class="logo-name">
-                <img src="logo-pet.png" alt="Logo" class="logo">
-                <h1>Veterinaria Ciudad Canina</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#">AGENDAMIENTO MEDICINA</a></li>
-                    <li><a href="#">AGENDAMIENTO GROOMING</a></li>
-                    <li><a href="#">COMPRAS</a></li>
-                    <li><a href="#">SING IN/LOGIN IN</a></li>
+        <nav class="navbar navbar-expand-lg shadow navbar-color">
+            <div class="container-fluid ">
+                <img src="Asets/logo-pet.png" alt="Logo" class="logo">
+                <a class="display-6 text-black text-decoration-none" href="/Principal.html">Veterinaria Ciudad Canina</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 </ul>
-            </nav>
-        </div>
+                    <a class="mx-2 nav-link display-8 text-black text-decoration-none" href="#">AGENDAMIENTO MEDICINA</a>
+                    <a class="mx-2 nav-link display-8 text-black text-decoration-none" href="#">AGENDAMIENTO GROOMING</a>
+                    <a class="mx-2 nav-link display-8 text-black text-decoration-none" href="#">COMPRAS</a>
+                    <a class="mx-2 nav-link display-8 text-black text-decoration-none" href="#">SING IN</a>
+                    <a class="mx-2 nav-link display-8 text-black text-decoration-none" href="#">LOGIN IN</a>
+                <button class="btn" onclick="tema()"><i id="botont" class="bi bi-sun"></i> </button>
+                </div>
+            </div>
+        </nav>
     </header>
 
+  
     <main>
-                <section class="info">
-            <div class="column">
-                <h1>CLINICA VETERINARIA CIUDAD CANINA</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <img src="vet-image.png" alt="Imagen veterinaria">
-            </div>
-            <div class="column">
-                <h2>MISION</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <h2>VISION</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-           
-            </div>
-            <div class="column">
-                <h3>Dr. Miller Javier Beltran Cardenas</h3>
-                <div>
-                <img src="doctor.jpg" alt="Dr. Miller Javier Beltran Cardenas" class="doctor-image">
-                <p>o eiusmod tempor incididuntLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt El doctor miller Beltran con trayectoria en mas de 25 años de experiencia con mascotas y en servicio al cliente como tambien en medicina veterinaria. graduado en la universidad UDCA</p>
+        <div class="">
+            <div class="row">
+                <div class="col-4 text-center p-5 border"><h1>CLINICA VETERINARIA CIUDAD CANINA</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <img class="img-fluid rounded-5" src="Asets/vet-image.png" alt="Imagen veterinaria">
                 </div>
-                <div class="">
-                <p>&nbsp;&nbsp;&nbsp;Nos puede encontrar en nuestra tienda física en la calle 62 # 167 - 11 Portales del norte en la ciudad de Bogotá - Colombia</p>
-                <img src="maps-image.png" alt="Mapa">
-             
-                <a href="https://www.google.com/maps/place/CIUDAD+CANINA+VETERINARIA/@4.7497006,-74.0629194,1179m/data=!3m1!1e3!4m6!3m5!1s0x8e3f85a6923946cd:0xaa100ebe70e38f1c!8m2!3d4.7502977!4d-74.0615213!16s%2Fg%2F1ptyhz788?entry=ttu">Visitar en google maps</a>
+                <div class="col-4 text-start border p-5">
+                    <h2 class="text-center">MISION</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <h2 class="text-center">VISION</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
-            </div>
-        </section>
-        
-    </main>
+                <div class="col-4 text-center border py-5">
+                    <h3>Dr. Miller Javier Beltran Cardenas</h3>
+                    <div class="d-flex align-items-center p-5">
+                        <p>o eiusmod tempor incididuntLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt El doctor miller Beltran con trayectoria en mas de 25 años de experiencia con mascotas y en servicio al cliente como tambien en medicina veterinaria. graduado en la universidad UDCA</p>
+                        <img src="/Asets/doctor.jpg" alt="Dr. Miller Javier Beltran Cardenas" class="w-25 rounded-circle">
+                    </div>
+                    <div class="">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7952.234051379735!2d-74.0629194!3d4.7497006!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f85a6923946cd%3A0xaa100ebe70e38f1c!2sCIUDAD%20CANINA%20VETERINARIA!5e0!3m2!1ses-419!2sco!4v1717706261248!5m2!1ses-419!2sco" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <p>Nos puede encontrar en nuestra tienda física en la calle 62 # 167 - 11 Portales del norte en la ciudad de Bogotá - Colombia</p>
 
+                    </div>
+            </div>
+        </div>        
+    </main>
     <footer>
         <div class="contact-info">
             <p>Contact us</p>
-            <p>+57 321 123 4567</p>
-            <p>correo@example.com</p>
+            <p>+57 3112331447</p>
+            <p>citycanvet@gmail.com</p>
         </div>
         <div class="footer-links">
             <ul>
@@ -74,5 +78,8 @@
             </ul>
         </div>
     </footer>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
 </html>

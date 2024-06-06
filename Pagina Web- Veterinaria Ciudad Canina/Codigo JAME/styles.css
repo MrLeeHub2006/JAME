@@ -5,23 +5,8 @@ body {
     box-sizing: border-box;
 }
 
-header {
+.navbar-color {
     background-color: #FED8B1;
-    padding: 10px 0;
-}
-
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.logo-name {
-    display: flex;
-    align-items: center;
 }
 
 .logo {
@@ -29,57 +14,10 @@ header {
     height: 70px;
     margin-right: 10px;
 }
-
-.logo-name h1 {
-    font-size: 1.5em;
-    margin: 0;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-}
-
-main {
+.bggris {
     padding: 20px;
     background-color: #e1e1e1;
 
-}
-
-.intro img {
-    max-width: 50%;
-    height: auto;
-
-}
-
-.info {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 5px;
-    text-align:left;
-}
-
-.column {
-    width: 30%;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-.column img {
-    max-width: 100%;
-    height: auto;
 }
 
 footer {
@@ -107,11 +45,5 @@ footer .footer-links {
 .footer-links ul li a {
     text-decoration: none;
     color: #fff;
-}
-
-.doctor-image {
-    width: 50%; /* Cambia el porcentaje según necesites */
-    height: auto;
-    float: right;
 }
 
