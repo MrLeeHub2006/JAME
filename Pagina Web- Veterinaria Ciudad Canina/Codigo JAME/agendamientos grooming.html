@@ -37,14 +37,14 @@
 
     <main>
         
-        <section class="container text-center py-5">
-            <h2>Agendamiento Medicina</h2>
-            <div class="row justify-content-center">
-                <div class="col-md-8">
+        <section class="container text-center py-5 px-0">
+            <h2>Agendamiento Grooming</h2>
+            <div class="row">
+                <div class="col-12">
                     <div class="service-container">
                         <form>
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-3">
                                     <div class="mb-3">
                                         <label for="petName" class="form-label">Nombre *</label>
                                         <input type="text" class="form-control" id="petName" placeholder="Registre aquí">
@@ -61,32 +61,47 @@
                                         <label for="email" class="form-label">Email *</label>
                                         <input type="email" class="form-control" id="email" placeholder="Registre aquí">
                                     </div>
-
-                                    <div class="mb-4">
-                                        <label for="service" class="form-label">Seleccione el servicio</label>
-                                        <select class="form-select" id="service">
-                                            <option>Medicina general</option>
-                                            <option>Consulta Nutricional</option>
-                                            <option>Vacunación</option>
-                                            <option>Cardiología</option>
-                                            <option>Esterilización</option>
-                                        </select>
-                                    </div>
-
-                                    <div class="mb-3 form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="petType" id="dog" value="dog">
-                                        <label class="form-check-label" for="dog">Perro</label>
-                                    </div>
-                                    <div class="mb-3 form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="petType" id="cat" value="cat">
-                                        <label class="form-check-label" for="cat">Gato</label>
-                                    </div>
-                                    <div class="mb-3 form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="petType" id="other" value="other">
-                                        <label class="form-check-label" for="other">Otro. ¿Cuál?</label>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Raza de la mascota *</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Registre aquí">
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                
+                                    <div class="col-3">
+                                        <div class="mb-4">
+                                            <label for="service" class="form-label">Seleccione el servicio</label>
+                                            <select class="form-select" id="service">
+                                                <option>Corte</option>
+                                                <option>Baño</option>
+                                                <option>Corte y baño</option>
+                                                <option>Corte de uñas</option>
+                                            </select>
+                                        </div>  
+    
+                                        <div class="mb-4">
+                                            <label for="service" class="form-label">Pelaje</label>
+                                            <select class="form-select" id="service">
+                                                <option>Corto</option>
+                                                <option>Mediano</option>
+                                                <option>Largo</option>
+                                            </select>
+                                        </div>  
+                                        <div class="mb-3 form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="petType" id="dog" value="dog">
+                                            <label class="form-check-label" for="dog">Perro</label>
+                                        </div>
+                                        <div class="mb-3 form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="petType" id="cat" value="cat">
+                                            <label class="form-check-label" for="cat">Gato</label>
+                                        </div>
+                                        <div class="mb-3 form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="petType" id="other" value="other">
+                                            <label class="form-check-label" for="other">Otro. ¿Cuál?</label>
+                                        </div>
+                                    </div>
+                                    
+        
+                                <div class="col-4 px-5 ">
                                     <div class="mb-3">
                                         <label for="date" class="form-label">Fecha</label>
                                         <input type="date" class="form-control" id="date">
@@ -96,18 +111,17 @@
                                         <input  type="time" class="form-control" id="time">
                                         <h6>Sera atendid@ por:</h6>
                                         <div class="d-flex align-items-center p-4">
-                                            <p>Dr. Miller Javier Beltran Cardenas</p>
-                                            <img src="Asets/doctor.jpg
-                                            " alt="Dr. Miller Javier Beltran Cardenas" class="w-50 rounded-circle">
+                                            <p>Nuestra peluquera Sandra XXXXXX</p>
+                                            <img src="Asets/peluquero.jpg" alt="Dr. Miller Javier Beltran Cardenas" class="w-50 rounded-circle">
+                                        </div>
+                                        <div class="mt-4">
+                                            <button type="submit" class="btn btn-primary">Agendar</button>
+                                            <button href="servicios medicina.html" type="reset" class="btn btn-secondary">Cancelar</button>
+                                            <button href="agendamientos medicina.html" type="button" class="btn btn-warning">Limpiar</button>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            
-                            <div class="mt-4">
-                                <button type="submit" class="btn btn-primary">Agendar</button>
-                                <button href="servicios medicina.html" type="reset" class="btn btn-secondary">Cancelar</button>
-                                <button href="agendamientos medicina.html" type="button" class="btn btn-warning">Limpiar</button>
+                        
                             </div>
                         </form>
                     </div>
