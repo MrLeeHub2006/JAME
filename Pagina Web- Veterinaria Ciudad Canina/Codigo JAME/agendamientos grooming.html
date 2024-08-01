@@ -62,7 +62,7 @@
                                     </div>
                                     <div class="mb-3">
                                         <label for="email" class="form-label">Raza de la mascota *</label>
-                                        <input type="email" class="form-control" id="email" placeholder="Registre aquí">
+                                        <input type="email" class="form-control" placeholder="Registre aquí">
                                     </div>
                                 </div>
                                 
@@ -114,7 +114,38 @@
                                                 <img src="Asets/peluquero.jpg" alt="Dr. Miller Javier Beltran Cardenas" class="w-50 rounded-circle">
                                             </div>
                                             <div class="mt-4">
-                                                <button type="submit" class="btn btn-primary">Agendar</button>
+                                                <!-- Button trigger modal -->
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                    Agendar
+                                                </button>
+                                                
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-xl">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Cita para Grooming agendada exitosamente</h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            Su cita ha sido agendada para el dia XX/XX/XXXX 
+                                                            Por favor estar con 10 minutos de anticipacion de desear cancelar la cita 
+                                                            llamar al +57 321 123 4567
+                                                             Con anticipacion.
+
+                                                             Se le recordara de su cita por medio de su numero de celular en un 
+                                                            mensaje SMS
+
+                                                            Gracias por confiar en VETERINARIA CIUDAD CANINA
+
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-primary">Understood</button>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                </div>
                                                 <button href="servicios medicina.html" type="reset" class="btn btn-secondary">Cancelar</button>
                                                 <button href="agendamientos medicina.html" type="button" class="btn btn-warning">Limpiar</button>
                                             </div>
