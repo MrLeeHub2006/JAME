@@ -105,7 +105,46 @@
                             </div>
                             
                             <div class="mt-4">
-                                <button type="submit" class="btn btn-primary">Agendar</button>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                Agendar
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">VETERINARIA
+                                                CIUDAD CANINA</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="container">
+                                            <h3 class="pt-5">Cita para Medicina agendada exitosamente</h3>
+                                            <br>
+                                            <p class="pt-3"> Su cita ha sido agendada para el dia XX/XX/XXXX<br>
+                                                Por favor estar con 10 minutos de anticipacion de desear
+                                                cancelar la cita<br><br>
+
+                                                llamar al +57 311 459 0006
+                                                Con anticipacion.<br><br>
+                                                Se le recordara de su cita por medio de su numero de celular en un 
+                                                mensaje SMS<br><br>
+                                                Gracias por confiar en VETERINARIA CIUDAD CANINA
+                                            </p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Cerrar</button>
+                                            <button type="button" class="btn btn-primary" a href="https://wa.me/qr/JO66SJKQX2COH1">Comunicarse en WhatsApp</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                                 <button href="servicios medicina.html" type="reset" class="btn btn-secondary">Cancelar</button>
                                 <button href="agendamientos medicina.html" type="button" class="btn btn-warning">Limpiar</button>
                             </div>
