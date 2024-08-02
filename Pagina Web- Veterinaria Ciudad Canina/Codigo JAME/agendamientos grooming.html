@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         .service-container {
-            background-color: #d0d2d4;
+            background-color: #b7c4ca;
             /* Color de fondo para el contenedor */
-            padding: 20px;
-            border-radius: 10px;
+            padding: 40px;
+            border-radius: 100px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
     </style>
@@ -34,6 +34,7 @@
                     </ul>
                     <a class="mx-2 nav-link display-8 text-black text-decoration-none"
                         href="servicios medicina.html">AGENDAMIENTO MEDICINA</a>
+                        
                     <a class="mx-2 nav-link display-8 text-black text-decoration-none" href="#">COMPRAS</a>
                     <a class="mx-2 nav-link display-8 text-black text-decoration-none" href="#">PERFIL</a>
                 </div>
@@ -43,14 +44,15 @@
 
     <main>
 
-        <section class="container text-center py-5 px-0">
+        <section class="container text-center py-5 px-0 bg-white">
             <h2>Agendamiento Grooming</h2>
-
+            <br>
+            <br>
             <div class="service-container">
                 <form>
                     <div class="row">
-                        <div class="col-3">
-                            <div class="mb-3">
+                        <div class="col-md-4 py-4 px-5">
+                            <div class="mb-">
                                 <label for="petName" class="form-label">Nombre *</label>
                                 <input type="text" class="form-control" id="petName" placeholder="Registre aquí">
                             </div>
@@ -72,7 +74,7 @@
                             </div>
                         </div>
 
-                        <div class="col-3">
+                        <div class="col-md-4 p-4">
                             <div class="mb-4">
                                 <label for="service" class="form-label">Seleccione el servicio</label>
                                 <select class="form-select" id="service">
@@ -103,10 +105,17 @@
                                 <input class="form-check-input" type="radio" name="petType" id="other" value="other">
                                 <label class="form-check-label" for="other">Otro. ¿Cuál?</label>
                             </div>
+                            <h6>Sera atendid@ por:</h6>
+                                <div class="d-flex align-items-center p-4">
+                                    <p>Nuestra peluquera Sandra XXXXXX</p>
+                                    <img src="Asets/peluquero.jpg" alt="Dr. Miller Javier Beltran Cardenas"
+                                        class="w-50 rounded-circle">
+                                </div>
                         </div>
+                        
 
 
-                        <div class="col-4 px-5 ">
+                        <div class="col-md-4 py-4 px-5 ">
                             <div class="mb-3">
                                 <label for="date" class="form-label">Fecha</label>
                                 <input type="date" class="form-control" id="date">
@@ -114,12 +123,7 @@
                             <div class="mb-3">
                                 <label for="time" class="form-label">Hora</label>
                                 <input type="time" class="form-control" id="time">
-                                <h6>Sera atendid@ por:</h6>
-                                <div class="d-flex align-items-center p-4">
-                                    <p>Nuestra peluquera Sandra XXXXXX</p>
-                                    <img src="Asets/peluquero.jpg" alt="Dr. Miller Javier Beltran Cardenas"
-                                        class="w-50 rounded-circle">
-                                </div>
+                                
                                 <div class="mt-4">
                                     <!-- Button trigger modal -->
                                     <button type="button" class="btn btn-primary" data-bs-toggle="modal"
