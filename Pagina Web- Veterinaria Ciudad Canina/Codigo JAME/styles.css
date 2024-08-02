@@ -186,3 +186,63 @@ footer .footer-links {
     margin: 10px;
     border-radius: 15px;
 }
+/*carrito de compras*/
+
+.carro {
+  padding: 20px;
+}
+
+.carro h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.producto1 {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.imgproducto{
+  weight: 100px;
+  height: 100px;
+
+}
+
+
+.producto p {
+  margin: 0 10px;
+}
+
+.producto input[type="text"],
+.producto input[type="date"] {
+  margin: 0 10px;
+}
+
+.producto button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+}
+
+.advertencia {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #f5c6cb;
+}
+
+.contacto button {
+  background-color: #25d366;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 20px 0;
+  display: block;
+  width: 100%;
+  text-align: center;
+}

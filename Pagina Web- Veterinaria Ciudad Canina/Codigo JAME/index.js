@@ -11,6 +11,3 @@ function tema(){
         }
       }
 
-      /*alert para la cancelacion del servicio en agendamientos de grooming y medicina*/
-
-      
