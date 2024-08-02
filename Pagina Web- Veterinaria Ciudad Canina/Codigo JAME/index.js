@@ -10,3 +10,7 @@ function tema(){
           icon.setAttribute("class","bi bi-sun-fill")
         }
       }
+
+      /*alert para la cancelacion del servicio en agendamientos de grooming y medicina*/
+
+      
