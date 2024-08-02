@@ -168,11 +168,30 @@
                                     <script>
                                         document.getElementById('cancel').addEventListener('click', function () {
                                             Swal.fire({
-                                                title: 'Hello!',
-                                                text: 'This is a SweetAlert2 alert.',
-                                                icon: 'success',
-                                                confirmButtonText: 'Cool'
-                                            });
+                                                icon: "question",
+                                                title: "¿Desea cancelar su agendamiento?",
+                                                showDenyButton: true,
+                                                confirmButtonText: "Cancelar",
+                                                denyButtonText: `Volver`
+                                            }).then((result) => {
+                                                /* Read more about isConfirmed, isDenied below */
+                                                if (result.isConfirmed) {
+                                                    Swal.fire({ 
+                                                        title:"Cancelado",
+                                                        icon:"success", 
+                                                        timer: 1000,
+                                                        showConfirmButton: false,
+
+                                                    }).then(( ) => { 
+                                                        window.location.href = 'index.html';
+
+                                                    }) 
+                                                   
+                                                } else if (result.isDenied) {
+                                                    Swal.fire("Su agendamiento no sera cancelado", "", "error");
+                                                }
+                                            }) ;
+                                            
                                         });
                                     </script>
 
