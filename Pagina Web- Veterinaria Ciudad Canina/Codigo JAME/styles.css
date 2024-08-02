@@ -163,5 +163,23 @@ footer .footer-links {
   .formulario__register{
   display: none;
   }
-  /* medicina*/
-  
+  /* prodcutos*/
+  .productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.producto {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    width: 150px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.producto img {
+    width: 100px;
+    height: 100px;
+}
