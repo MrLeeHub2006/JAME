@@ -148,7 +148,8 @@
 
                                                         llamar al +57 311 459 0006
                                                         Con anticipacion.<br><br>
-                                                        Se le recordara de su cita por medio de su numero de celular en un 
+                                                        Se le recordara de su cita por medio de su numero de celular en
+                                                        un
                                                         mensaje SMS<br><br>
                                                         Gracias por confiar en VETERINARIA CIUDAD CANINA
                                                     </p>
@@ -156,32 +157,28 @@
                                                 <div class="modal-footer">
                                                     <button type="button" class="btn btn-secondary"
                                                         data-bs-dismiss="modal">Cerrar</button>
-                                                    <button type="button" class="btn btn-primary"> <a href="https://wa.me/qr/JO66SJKQX2COH1" class="link-light">Comunicarse en WhatsApp</a></button>
+                                                    <button type="button" class="btn btn-primary"> <a
+                                                            href="https://wa.me/qr/JO66SJKQX2COH1"
+                                                            class="link-light">Comunicarse en WhatsApp</a></button>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <button type="button" class="btn btn-primary"><a href="index.html" class="link-light">Cancelar</a> </button>
+                                    <button type="button" id="cancel" class="btn btn-primary">Cancelar</a></button>
                                     <script>
-                                        Swal.fire({
-                                            title: "Do you want to save the changes?",
-                                            showDenyButton: true,
-                                            showCancelButton: true,
-                                            confirmButtonText: "Save",
-                                            denyButtonText: `Don't save`
-                                          }).then((result) => {
-                                            /* Read more about isConfirmed, isDenied below */
-                                            if (result.isConfirmed) {
-                                              Swal.fire("Saved!", "", "success");
-                                            } else if (result.isDenied) {
-                                              Swal.fire("Changes are not saved", "", "info");
-                                            }
-                                          });
-                                        </script>
-                                       
+                                        document.getElementById('cancel').addEventListener('click', function () {
+                                            Swal.fire({
+                                                title: 'Hello!',
+                                                text: 'This is a SweetAlert2 alert.',
+                                                icon: 'success',
+                                                confirmButtonText: 'Cool'
+                                            });
+                                        });
+                                    </script>
+
                                     <button href="agendamientos medicina.html" type="reset"
                                         class="btn btn-warning">Limpiar</button>
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -221,6 +218,7 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>
