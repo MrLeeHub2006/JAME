@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria Ciudad Canina</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        .header {
+            background-color: #f1d1a5;
+            padding: 10px 0;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .header img {
+            height: 50px;
+        }
+
+        .header nav a {
+            margin: 0 15px;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .cart-icon {
+            margin-right: 20px;
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content h1 {
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .category {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .category-section {
+            background-color: #e2e2e2;
+            padding: 20px;
+            border-radius: 5px;
+            width: 200px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+
+        .category-section h2 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .product {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+
+        .product span {
+            display: block;
+            margin-top: 5px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .product a {
+            display: inline-block;
+            margin-top: 5px;
+            font-size: 14px;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+
+        .footer .footer-section {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .footer div {
+            margin: 10px 0;
+        }
+
+        .footer a {
+            color: #ddd;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .footer a:hover {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>VETERINARIA CIUDAD CANINA</h1>
+        </div>
+        <nav>
+            <a href="#">AGENDAMIENTO MEDICINA</a>
+            <a href="#">AGENDAMIENTO GROOMING</a>
+            <a href="#" class="cart-icon">🛒</a>
+            <a href="#">PERFIL</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h1>Productos para tu mascota</h1>
+        <div class="category">
+            <div class="">
+                <h2>Aseo</h2>
+
+                <div class="category-section">
+                    <div class="product">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY-nhNEyO6lH6etZYeHauAqEJGkY2XF0KVXw&s"
+                            alt="Producto de Aseo">
+                        <span>PRODUCTO</span>
+                    </div>
+                    <div class="product">
+                        <img src="https://via.placeholder.com/150" alt="Producto de Aseo">
+                        <span>PRODUCTO</span>
+                    </div>
+                    <div class="product">
+                        <img src="https://via.placeholder.com/150" alt="Producto de Aseo">
+                        <span>Productos</span>
+                    </div>
+                    <a href="#">Ver más</a>
+                </div>
+
+            </div>
+
+            <div class="">
+                <h2>Alimentacion</h2>
+
+                <div class="category-section">
+                    <div class="product">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY-nhNEyO6lH6etZYeHauAqEJGkY2XF0KVXw&s"
+                            alt="Producto de Aseo">
+                        <span>PRODUCTO</span>
+                    </div>
+                    <div class="product">
+                        <img src="https://via.placeholder.com/150" alt="Producto de Aseo">
+                        <span>PRODUCTO</span>
+                    </div>
+                    <div class="product">
+                        <img src="https://via.placeholder.com/150" alt="Producto de Aseo">
+                        <span>Productos</span>
+                    </div>
+                    <a href="#">Ver más</a>
+                </div>
+
+            </div>
+
+
+            <div class="category">
+                <div class="">
+                    <h2>Medicina</h2>
+
+                    <div class="category-section">
+                        <div class="product">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY-nhNEyO6lH6etZYeHauAqEJGkY2XF0KVXw&s"
+                                alt="Producto de Aseo">
+                            <span>PRODUCTO</span>
+                        </div>
+                        <div class="product">
+                            <img src="https://via.placeholder.com/150" alt="Producto de Aseo">
+                            <span>PRODUCTO</span>
+                        </div>
+                        <div class="product">
+                            <img src="https://via.placeholder.com/150" alt="Producto de Aseo">
+                            <span>Productos</span>
+                        </div>
+                        <a href="#">Ver más</a>
+                    </div>
+
+                </div>
+
+                <div class="category">
+                    <div class="">
+                        <h2>Entretenimeinto</h2>
+
+                        <div class="category-section">
+                            <div class="product">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY-nhNEyO6lH6etZYeHauAqEJGkY2XF0KVXw&s"
+                                    alt="Producto de Aseo">
+                                <span>PRODUCTO</span>
+                            </div>
+                            <div class="product">
+                                <img src="https://via.placeholder.com/150" alt="Producto de Aseo">
+                                <span>PRODUCTO</span>
+                            </div>
+                            <div class="product">
+                                <img src="https://via.placeholder.com/150" alt="Producto de Aseo">
+                                <span>Productos</span>
+                            </div>
+                            <a href="#">Ver más</a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-section">
+            <div>
+                <p>Contact us</p>
+                <a href="tel:+573211234567">+57 321 123 4567</a>
+                <a href="mailto:username@mail.com">username@mail.com</a>
+            </div>
+            <div>
+                <p>Conócenos</p>
+                <a href="#">Nuestra Historia</a>
+                <a href="#">¿Quiénes somos?</a>
+                <a href="#">Sedes</a>
+                <a href="#">Trabaje con nosotros</a>
+                <a href="#">Ingreso correo corporativo</a>
+            </div>
+            <div>
+                <p>Términos y condiciones</p>
+                <a href="#">Preguntas frecuentes</a>
+                <a href="#">Políticas de cambio y garantía</a>
+                <a href="#">Política de tratamiento de datos</a>
+                <a href="#">Contáctenos</a>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
