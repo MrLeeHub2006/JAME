@@ -20,32 +20,37 @@ body {
 
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 30px;
 }
 
-footer .contact-info,
-footer .footer-links {
-    margin-bottom: 10px;
+.footer .footer-section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-.footer-links ul {
-    list-style: none;
-    padding: 0;
+.footer div {
+  margin: 10px 0;
 }
 
-.footer-links ul li {
-    display: inline;
-    margin: 0 10px;
+.footer a {
+  color: #ddd;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
 }
 
-.footer-links ul li a {
-    text-decoration: none;
-    color: white;
+.footer a:hover {
+  color: white;
 }
+
+
+
 
 /* inicio del login and register*/
 .contenedor__todo{

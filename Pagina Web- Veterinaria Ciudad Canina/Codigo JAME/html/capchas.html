@@ -85,3 +85,66 @@
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Contraseña</title>
+</head>
+<body>
+    <h1>Recuperación de Contraseña</h1>
+    <form id="recoveryForm">
+        <label for="usuario">Nombre de Usuario:</label>
+        <input type="text" id="usuario" name="usuario" required>
+        <br>
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+        <br>
+        <div id="verificationSection" style="display: none;">
+            <label for="nueva_contraseña">Nueva Contraseña:</label>
+            <input type="password" id="nueva_contraseña" name="nueva_contraseña" required>
+            <br>
+            <label for="confirmar_contraseña">Confirmar Contraseña:</label>
+            <input type="password" id="confirmar_contraseña" name="confirmar_contraseña" required>
+            <br>
+            <button type="button" onclick="restablecerContrasena()">Restablecer Contraseña</button>
+        </div>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+    <p id="message"></p>
+
+    <script>
+        const usuario_registrado = "08_drt";
+        const correo_registrado = "alidatorres0623@gmail.com";
+
+        document.getElementById('recoveryForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const usuario = document.getElementById('usuario').value;
+            const correo = document.getElementById('correo').value;
+            const messageElement = document.getElementById('message');
+            
+            if (usuario === usuario_registrado && correo === correo_registrado) {
+                document.getElementById('verificationSection').style.display = 'block';
+                messageElement.textContent = 'Verificación exitosa. Ahora puede restablecer su contraseña.';
+            } else {
+                messageElement.textContent = 'La información ingresada no coincide con nuestros registros. No se puede restablecer la contraseña.';
+            }
+        });
+
+        function restablecerContrasena() {
+            const nueva_contraseña = document.getElementById('nueva_contraseña').value;
+            const confirmar_contraseña = document.getElementById('confirmar_contraseña').value;
+            const messageElement = document.getElementById('message');
+
+            if (nueva_contraseña === confirmar_contraseña) {
+                messageElement.textContent = 'Contraseña restablecida con éxito.';
+            } else {
+                messageElement.textContent = 'Las contraseñas no coinciden. Intente de nuevo.';
+            }
+        }
+    </script>
+</body>
+</html>
