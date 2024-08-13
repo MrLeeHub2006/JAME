@@ -133,6 +133,26 @@
       window.onload = function() {
         updateCaptchaImage();
       };
+ /*login*/
+    document.addEventListener('DOMContentLoaded', function() {
+        const registeredUser = "AlissssT";
+        const registeredPassword = "Torres0623";
+
+        document.querySelector('.formulario__login button').addEventListener('click', function(event) {
+            event.preventDefault(); // Evitar el envío del formulario por defecto
+
+            const enteredUser = document.querySelector('.formulario__login input[placeholder="Usuario"]').value;
+            const enteredPassword = document.querySelector('.formulario__login input[placeholder="Contraseña"]').value;
+
+            if (enteredUser === registeredUser && enteredPassword === registeredPassword) {
+                alert("Inicio de sesión exitoso. ¡Bienvenido!");
+            } else {
+                alert("Nombre de usuario o contraseña incorrectos. Intente nuevamente.");
+            }
+        });
+    });
+
+
     </script>
   </body>
 </html>
