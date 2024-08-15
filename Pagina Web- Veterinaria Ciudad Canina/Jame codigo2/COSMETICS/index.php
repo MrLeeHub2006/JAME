@@ -20,22 +20,23 @@ try {
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/index.css">
     <link rel="shortcut icon" href="img/LOGO.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/eb36e646d1.js" crossorigin="anonymous"></script>
-    <title>Paradise Cosmetics</title>
+    <title>Inicio Ciudad Canina</title>
 </head>
 <body>
     <header>
-            <div class="texto-rosa-header">
-                <p>El secreto de la belleza es ser tú misma</p>
+            <div class="texto-rosa-header"> 
+                <p>La mejor opcion para el cuidado de tu mascota</p>
             </div>
             <div class="logo-account-navbar">
                 <div class="logo">
-                    <a href="index.php"><img src="IMG/Logo_Paradise_cosmetics.png" id="logo-header"></a>
+                    <a href="index.php"><img src="IMG/logovet.png" id="logo-header"></a>
                 </div>
                 <div class="nav-search">
                     <input type="text" id="search-input" placeholder="Buscar productos...">
@@ -51,8 +52,10 @@ try {
                 <ul class="nav-list">
                     <li class="nav-list-item"><a href="index.php">Inicio</a></li>
                     <li class="nav-list-item"><a href="index.php#productos">Productos</a></li>
-                    <li class="nav-list-item"><a href="index.php#about-us">Acerca de nosotros</a></li>
                     <li class="nav-list-item"><a href="index.php#contact-info">Contacto</a></li>
+                    <li class="nav-list-item"><a href="index.php#contact-info">Grooming</a></li>
+                    <li class="nav-list-item"><a href="index.php#contact-info">Medicina</a></li>
+                    <li class="nav-list-item"><a href="index.php#about-us">Acerca de nosotros</a></li>
                 </ul>
             </div>
     </header>
@@ -126,7 +129,28 @@ try {
         </div>
         </section>
         <a name="contact-info"></a>
-        <section class="contact-info">
+       
+        <a name="carritox"></a>
+        <div class="carrito" style="display: none;">
+            <h3>Carrito de Compras</h3>
+            <div class="carrito-contenido">
+                <!-- Aquí se mostrarán los productos del carrito -->
+            </div>
+            <div class="carrito-total">
+                <p>Total: <span id="total-carrito">0 COP</span></p>
+                <button id="vaciar-carrito">Vaciar Carrito</button>
+                <button id="comprar">Comprar</button>
+            </div>
+            <form id="carrito-form" action="PHP/compra.php" method="post" style="display: none;">
+                <input type="hidden" name="carrito" id="carrito-input">
+            </form>
+
+        </div>
+
+    </main>
+
+    <footer>
+ <section class="contact-info">
             <div class="container-contact-info">
                 <div class="contact-form">
                     <h2 class="section-title">Contacto</h2>
@@ -159,27 +183,7 @@ try {
                 
             </div>
         </section>
-        <a name="carritox"></a>
-        <div class="carrito" style="display: none;">
-            <h3>Carrito de Compras</h3>
-            <div class="carrito-contenido">
-                <!-- Aquí se mostrarán los productos del carrito -->
-            </div>
-            <div class="carrito-total">
-                <p>Total: <span id="total-carrito">0 COP</span></p>
-                <button id="vaciar-carrito">Vaciar Carrito</button>
-                <button id="comprar">Comprar</button>
-            </div>
-            <form id="carrito-form" action="PHP/compra.php" method="post" style="display: none;">
-                <input type="hidden" name="carrito" id="carrito-input">
-            </form>
-
-        </div>
-
-    </main>
-
-    <footer>
-        <p>&copy; 2023 Tu Tienda de Cosméticos. Todos los derechos reservados.</p>
+        <p class="foter">&copy; 2023 Tu Tienda de Cosméticos. Todos los derechos reservados.</p>
     </footer>
     <script src="JS/carrito.js"></script>
     <script>
