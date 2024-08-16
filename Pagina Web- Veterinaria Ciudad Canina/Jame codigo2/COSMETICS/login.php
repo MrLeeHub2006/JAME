@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/login.css">
-    <title>Inicia Sesión</title>
+    <title>Inicia Sesión Veterinaria Ciudad Canina</title>
 </head>
 <body>
     <main>

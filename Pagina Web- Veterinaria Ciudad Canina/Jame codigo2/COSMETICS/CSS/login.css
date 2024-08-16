@@ -58,7 +58,7 @@ main{
 .contenedor-login form h1{
     font-size: 30px;
     margin: 50px 0px 30px;
-    color: rgb(255, 154, 171);
+    color: rgb(0, 162, 255);
 }
 .contenedor-login form input{
     width: 100%;
@@ -82,7 +82,7 @@ main{
 .caja-trasera{
     height: 320px;
     width: 730px;
-    background-color: rgb(255, 202, 210, 0.55);
+    background-color: rgba(6, 197, 255, 0.55);
     display: flex;
 }
 .register-area, .login-area{
