@@ -31,15 +31,17 @@ if ((isset($_GET['id']) and $id == $_GET['id']) || (isset($_GET['id']) and $rol 
     <header>
             <div class="logo-account-navbar">
                 <div class="logo">
-                    <a href="index.php"><img src="IMG/Logo_Paradise_cosmetics.png" id="logo-header"></a>
+                    <a href="index.php"><img src="IMG/logovet.png" id="logo-header"></a>
                 </div>
             </div>
             <div class="texto-rosa-header nav-list-rosa">
                 <ul class="nav-list">
                     <li class="nav-list-item"><a href="index.php">Inicio</a></li>
-                    <li class="nav-list-item"><a href="index.php#usuarios">usuarios</a></li>
-                    <li class="nav-list-item"><a href="index.php#about-us">Acerca de nosotros</a></li>
+                    <li class="nav-list-item"><a href="index.php#productos">Productos</a></li>
                     <li class="nav-list-item"><a href="index.php#contact-info">Contacto</a></li>
+                    <li class="nav-list-item"><a href="index.php#contact-info">Grooming</a></li>
+                    <li class="nav-list-item"><a href="index.php#contact-info">Medicina</a></li>
+                    <li class="nav-list-item"><a href="index.php#about-us">Acerca de nosotros</a></li>
                 </ul>
             </div>
     </header>

@@ -63,9 +63,9 @@ try {
     <main>
         <section class="section-introduction">
             <div class="text-introduction">
-                <h1>Bienvenido a Tu Tienda de Cosméticos</h1>
-                <p>Descubre una amplia gama de productos de belleza y cuidado personal</p>
-                <a href="index.php#productos"><button class="btn-introduction">Ver Productos</button></a>
+                <h1>Bienvenido a Veterinaria Ciudad Canina</h1>
+                <p>Descubre la mejor gama de cuidado y servicios para la mascota</p>
+                <a href="index.php#productos"><button class="btn-introduction">Conocer más</button></a>
             </div>
             
         <a name="productos"></a>
