@@ -58,7 +58,7 @@ try {
                         <?php if (isset($usuario)) {
                             echo 'MI CUENTA';
                         } else if (!isset($usuario)) {
-                            echo 'Invitado(uknown)';
+                            echo 'Invitado';
                         }
                         ; ?></a>
                 </li>
