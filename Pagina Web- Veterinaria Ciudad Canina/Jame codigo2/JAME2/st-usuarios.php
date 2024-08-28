@@ -24,7 +24,7 @@ try {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/LOGO.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/logo-pet.png" type="image/x-icon">
     <link rel="stylesheet" href="CSS/sistema-usuarios.css">
     <script src="https://kit.fontawesome.com/eb36e646d1.js" crossorigin="anonymous"></script>
     <title>Query Users</title>
@@ -33,16 +33,18 @@ try {
     <header>
             <div class="logo-account-navbar">
                 <div class="logo">
-                    <a href="index.php"><img src="IMG/Logo_Paradise_cosmetics.png" id="logo-header"></a>
+                    <a href="index.php"><img src="IMG/logovet.png" id="logo-header"></a>
                 </div>
             </div>
             <div class="texto-rosa-header nav-list-rosa">
                 <ul class="nav-list">
-                    <li class="nav-list-item"><a href="index.php">Inicio</a></li>
-                    <li class="nav-list-item"><a href="index.php#usuarios">usuarios</a></li>
-                    <li class="nav-list-item"><a href="index.php#about-us">Acerca de nosotros</a></li>
-                    <li class="nav-list-item"><a href="index.php#contact-info">Contacto</a></li>
-                </ul>
+                <li class="nav-list-item"><a href="index.php">Inicio</a></li>
+                <li class="nav-list-item"><a href="index.php#productos">Productos</a></li>
+                <li class="nav-list-item"><a href="index.php#contact-info">Contacto</a></li>
+                <li class="nav-list-item"><a href="index.php#contact-info">Grooming</a></li>
+                <li class="nav-list-item"><a href="index.php#contact-info">Medicina</a></li>
+                <li class="nav-list-item"><a href="index.php#about-us">Acerca de nosotros</a></li>
+            </ul>
             </div>
     </header>
     <main>

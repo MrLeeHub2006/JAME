@@ -60,6 +60,7 @@ INSERT INTO `usuarios` (`id_usuario`, `nombre_completo`, `correo_electronico`, `
 (2, 'Samuel Useche Chaparro', 'samuel@gmail.com', 'SamuUseche', 1111, 'El valle de la sierra', 3209207777, 'USUARIOS_FOTOS/2.jpg', '2023-09-07 20:59:42', 2),
 (3, 'Alisson', 'alison@gmail.com', 'Alisson', 1111, 'Dirección', 3109999999, 'USUARIOS_FOTOS/3.jpg', '2023-10-03 19:33:21', 1);
 
+
 -- Inserción de productos
 INSERT INTO `productos` (`id_producto`, `nombre_producto`, `descripcion`, `precio`, `stock`, `imagen`) VALUES
 (1, 'Lápiz labial rojo', 'Lápiz labial de color rojo intenso', 19000, 50, ''),
