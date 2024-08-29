@@ -30,11 +30,13 @@ if (isset($_GET['id'])){
             </div>
             <div class="texto-rosa-header nav-list-rosa">
                 <ul class="nav-list">
-                    <li class="nav-list-item"><a href="index.php">Inicio</a></li>
-                    <li class="nav-list-item"><a href="index.php#productos">Productos</a></li>
-                    <li class="nav-list-item"><a href="index.php#about-us">Acerca de nosotros</a></li>
-                    <li class="nav-list-item"><a href="index.php#contact-info">Contacto</a></li>
-                </ul>
+                <li class="nav-list-item"><a href="index.php">Inicio</a></li>
+                <li class="nav-list-item"><a href="index.php#productos">Productos</a></li>
+                <li class="nav-list-item"><a href="index.php#contact-info">Contacto</a></li>
+                <li class="nav-list-item"><a href="index.php#contact-info">Grooming</a></li>
+                <li class="nav-list-item"><a href="index.php#contact-info">Medicina</a></li>
+                <li class="nav-list-item"><a href="index.php#about-us">Acerca de nosotros</a></li>
+            </ul>
             </div>
     </header>
     <main>

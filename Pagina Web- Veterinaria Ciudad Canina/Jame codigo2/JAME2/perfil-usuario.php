@@ -58,9 +58,10 @@ if ((isset($_GET['id']) and $id == $_GET['id']) || (isset($_GET['id']) and $rol 
                         }
                     ?>
                     <div class="foto-usuario" alt="Usuario" id="usuario-foto" style="background-image: url('<?php echo $imagen; ?>'); background-size: 100% 100%;"></div>
-                    <input type="file" name="imagen" id="fileField" value="cambiar foto">
+                    <input type="file" name="imagen" id="fileField" value="cambiar foto" required>
                     <input type="number" value="<?php echo $_GET['id'];?>" name="id" style="display:none; visibility: 0;">  
-                    <button type="submit" class="btn-foto">Cambiar foto</button>
+                    <button type="submit" id="cambiar_foto" class="btn-foto">Cambiar foto</button>
+                    
                 </form>
             </div>
             <div class="informacion-usuario">
@@ -99,7 +100,7 @@ if ((isset($_GET['id']) and $id == $_GET['id']) || (isset($_GET['id']) and $rol 
     <script>
     alert ("No tienes permisos para ver la información de otros usuarios");
     window.location="index.php";
-    </script>
+    </>
     ';
     }
     ?>
