@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             $correo = $row['correo_electronico'];
             $rol = $row['id_rol'];
             
-            if ($row["contraseña"] === $pass ) {
+           if (password_verify($pass, $row['contraseña'])) {
                 $_SESSION['username'] = $usuario;
                 $_SESSION['id'] = $idusuario;
                 $_SESSION['rol'] = $rol;
