@@ -8,6 +8,7 @@ $nombre_completo = $_POST['txtnombre'];
 $usuario = $_POST['txtusuario'];
 $correo = $_POST['txtcorreo'];
 $contraseña = $_POST['txtcontraseña'];
+$hash = password_hash($contraseña, PASSWORD_DEFAULT, [50]);
 $direccion = $_POST['txtdireccion'];
 $telefono = $_POST['txtnumero'];
 
@@ -23,7 +24,7 @@ SET `id_usuario`='$id_usuario',
 `nombre_completo`='$nombre_completo',
 `correo_electronico`='$correo',
 `usuario`='$usuario',
-`contraseña`='$contraseña',
+`contraseña`='$hash',
 `direccion`='$direccion',
 `telefono` = $telefono 
 WHERE `id_usuario` = ".$id_usuario."";  
