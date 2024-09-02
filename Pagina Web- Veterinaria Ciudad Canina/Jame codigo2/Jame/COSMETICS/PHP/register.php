@@ -1,14 +1,14 @@
 <?php 
 
 include 'conexion.php';
-
 $nombre = $_POST['nombre'];
 $correo = $_POST['email'];
 $usuario = $_POST['usuario'];
 $pass = $_POST['contraseña'];
+$hash = password_hash($pass, PASSWORD_DEFAULT, [50]);
 
 $query = "INSERT INTO `usuarios`(`nombre_completo`, `correo_electronico`, `usuario`, `contraseña`, `fecha_registro`) VALUES 
-('$nombre','$correo','$usuario','$pass', CURRENT_TIMESTAMP)";
+('$nombre','$correo','$usuario','$hash', CURRENT_TIMESTAMP)";
 
 $verificar_correo = mysqli_query($conexion, "SELECT * FROM `usuarios` WHERE `correo_electronico` = '$correo' ");
 
