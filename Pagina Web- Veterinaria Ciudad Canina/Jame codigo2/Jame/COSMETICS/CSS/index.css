@@ -461,3 +461,29 @@ main {
         padding: 0px 30px;
     }
 }
+/* Estilo de la sección sobre nosotros */
+
+.section-servicios {
+    margin: 30px 0px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-servicios {
+    background-color: rgb(195, 237, 252);
+    margin: 30px 0px 0px;
+    width: 80%;
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-servicios h2,
+.container-servicios p {
+    text-align: start;
+    width: 100%;
+    padding: 5px 0px;
+}

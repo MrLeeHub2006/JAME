@@ -172,16 +172,14 @@ try {
                 <input type="hidden" name="carrito" id="carrito-input">
             </form>
         </div>
-        <!DOCTYPE html>
-
-        <style>
+           <style>
             .tabs button {
-                background-color: inhe rit;
+                background-color: #2d9cf7;
                 border: 1px;
                 outline: none;
                 padding: 14px 16px;
                 cursor: pointer;
-                transition: background-color 0.3s;
+                transition: background-color 0.5s;
                 flex: 1;
                 font-size: 17px;
             }
@@ -198,6 +196,7 @@ try {
                 display: none;
                 padding: 20px;
                 border-top: none;
+                flex-direction: row;
             }
 
             .tab-content.active {
@@ -210,94 +209,91 @@ try {
                 margin-top: 10px;
             }
 
-            table,
-            th,
-            td {
-                border: 1px solid #dddddd;
-            }
-
             th,
             td {
                 text-align: left;
-                padding: 8px;
+                padding: 18px;
             }
 
             th {
                 background-color: #f2f2f2;
             }
-        </style>
+            h2 {
 
+                color: #2d9cf7;
+            }
 
-        <div class="tabs">
-            <button class="tab-link active" onclick="openTab(event, 'tab1')">Pestaña 1</button>
-            <button class="tab-link" onclick="openTab(event, 'tab2')">Pestaña 2</button>
-            <button class="tab-link" onclick="openTab(event, 'tab3')">Pestaña 3</button>
+        </style>    
+        <div class="container-servicios">
+
+                <div class="tabs">
+                    <button class="tab-link active" onclick="openTab(event, 'tab1')">Consulta medica</button>
+                    <button class="tab-link" onclick="openTab(event, 'tab2')">Servicio de grooming</button>
+                    <button class="tab-link" onclick="openTab(event, 'tab3')">Agendamiento de citas</button>
+                    <button class="tab-link" onclick="openTab(event, 'tab4')">Pedidos y servicios adicionales</button>
+                </div>
+
+                <div id="tab1" class="tab-content active">
+                    <h2>Consultas medicas especializadas</h2>
+                    <table>               
+                            <td> <center>
+                                En la veterinaria Ciudad Canina, tenemos servicio de consulta medica con un medico <br>
+                                veterinario con mas de 20 años de experiencia en donde tambien contamos con servicios<br>
+                                de esterilizacion, todo tipo de vacunaciones, recomendaciones, controles.</td></center>
+                                <td>
+                                    <img src="max.png" alt="expopet colombia"><br>
+                                Hola comoe stas esto es una prubea
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div id="tab2" class="tab-content">
+                    <h2>Todo en belleza para mascotas<br>
+                        Como amor se atiente tu peludo</h2>
+                    <table>
+                            <td> <center>Manejamos el servicio de baño y peluqueria, donde se atienden con pelo largo, corto, cortes al gusto del cliente con asesoria de profesional.<br>
+
+                            Adicionalmente se entrega limpieza de oidos corte de uñas y si lavado de dientes. <br>
+
+                            Si desea agendar un baño para su mascota, puede hacerlo por este medio o puede acercarse a la veterinaria y alla le haran el respectivo agendamiento.</td></center>
+                                <td>
+                                    <img src="max.png" alt="expopet colombia"><br>
+                                Hola comoe stas esto es una prubea
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="tab3" class="tab-content">
+                    <h2>Realiza tus agendamientos<br>
+                        para el tiempo que desees, tanto pedidos como servicios</h2>
+                <table>
+                            <td> <center>Tenemos servicio de agendamiento en donde puedes agendar desde dias antes para guardar <br>el cupo para que su mascota sea atendida de la mejor manera.<br><br>
+
+                                    Tambien tenemos servicio de agendamiento de pedidos, donde puede pasar a <br>recoger el pedido en el establecimiento con el respectivo pago.</td></center>
+                                <td>
+                                    <img src="max.png" alt="expopet colombia"><br>
+                                Hola comoe stas esto es una prubea
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                        <div id="tab4" class="tab-content">
+                    <h2>Servicios adicionales <br>
+                        con clientes</h2>
+                <table>
+                            <td> <center>En la veterinaria, nos importa mucho la comunicacion con nuestros clientes por eso tenemos atencion virtual <br>por medio de WhatsApp, Gmail y tambien tenemos servicio de recordatorio por medio de un mensaje SMS donde se le recordara sobre su agendamiento</td></center>
+                                <td>
+                                    <img src="max.png" alt="expopet colombia"><br>
+                                Hola comoe stas esto es una prubea
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+        
         </div>
-
-        <div id="tab1" class="tab-content active">
-            <h2>Contenido de la Pestaña 1</h2>
-            <table>
-                <tr>
-                    <th>Encabezado 1</th>
-                    <th>Encabezado 2</th>
-                    <th>Encabezado 3</th>
-                </tr>
-                <tr>
-                    <td>Dato 1</td>
-                    <td>Dato 2</td>
-                    <td>Dato 3</td>
-                </tr>
-                <tr>
-                    <td>Dato 4</td>
-                    <td>Dato 5</td>
-                    <td>Dato 6</td>
-                </tr>
-            </table>
-        </div>
-
-        <div id="tab2" class="tab-content">
-            <h2>Contenido de la Pestaña 2</h2>
-            <table>
-                <tr>
-                    <th>Producto</th>
-                    <th>Precio</th>
-                    <th>Cantidad</th>
-                </tr>
-                <tr>
-                    <td>Producto A</td>
-                    <td>$10</td>
-                    <td>100</td>
-                </tr>
-                <tr>
-                    <td>Producto B</td>
-                    <td>$20</td>
-                    <td>200</td>
-                </tr>
-            </table>
-        </div>
-
-        <div id="tab3" class="tab-content">
-            <h2>Contenido de la Pestaña 3</h2>
-            <table>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Edad</th>
-                    <th>Ciudad</th>
-                </tr>
-                <tr>
-                    <td>Juan Pérez</td>
-                    <td>30</td>
-                    <td>Madrid</td>
-                </tr>
-                <tr>
-                    <td>María López</td>
-                    <td>25</td>
-                    <td>Barcelona</td>
-                </tr>
-            </table>
-        </div>
-
-        <script>
+        <script>    
             function openTab(evt, tabName) {
                 var i, tabcontent, tablinks;
 
