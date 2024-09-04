@@ -8,7 +8,7 @@ CREATE TABLE `usuarios` (
   `nombre_completo` varchar(50) NOT NULL,
   `correo_electronico` varchar(100) NOT NULL,
   `usuario` varchar(30) NOT NULL,
-  `contraseña` decimal(20,0) NOT NULL,
+  `contraseña` varchar(255) NOT NULL,
   `direccion` varchar(200) DEFAULT NULL,
   `telefono` decimal(10,0) DEFAULT NULL,
   `imagen` varchar(30) NOT NULL DEFAULT 'USUARIOS_FOTOS/nf.jpg',
