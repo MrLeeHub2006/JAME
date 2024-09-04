@@ -25,7 +25,7 @@ if (isset($_GET['id'])){
     <header>
             <div class="logo-account-navbar">
                 <div class="logo">
-                    <a href="index.php"><img src="IMG/Logo_Paradise_cosmetics.png" id="logo-header"></a>
+                    <a href="index.php"><img src="IMG/logo-pet.png" id="logo-header"></a>
                 </div>
             </div>
             <div class="texto-rosa-header nav-list-rosa">
@@ -51,7 +51,7 @@ if (isset($_GET['id'])){
                         $imagen = "PRODUCTOS_FOTOS/nf.jpg";}
                 ?>
                 <div class="foto-producto" alt="Usuario" id="usuario-foto" style="background-image: url('<?php echo $imagen; ?>'); background-size: 100% 100%;"></div>
-                <input type="file" name="imagen" id="fileField" value="cambiar foto">
+                <input type="file" name="imagen" id="fileField" value="cambiar foto" required>
                 <input type="number" value="<?php echo $_GET['id'];?>" name="id" style="display:none; visibility: 0;">  
                 <button type="submit" class="btn-foto">Cambiar foto</button>
                 </form>

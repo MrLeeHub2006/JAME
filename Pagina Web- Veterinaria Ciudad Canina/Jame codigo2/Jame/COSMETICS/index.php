@@ -224,7 +224,7 @@ try {
             }
 
         </style>    
-        <div class="container-servicios">
+        <div class="container-servicios section-servicios">
 
                 <div class="tabs">
                     <button class="tab-link active" onclick="openTab(event, 'tab1')">Consulta medica</button>
@@ -233,8 +233,8 @@ try {
                     <button class="tab-link" onclick="openTab(event, 'tab4')">Pedidos y servicios adicionales</button>
                 </div>
 
-                <div id="tab1" class="tab-content active">
-                    <h2>Consultas medicas especializadas</h2>
+                <div id="tab1" class="tab-content active ">
+                    <center><h2>Consultas medicas especializadas</h2></center>
                     <table>               
                             <td> <center>
                                 En la veterinaria Ciudad Canina, tenemos servicio de consulta medica con un medico <br>
@@ -249,8 +249,8 @@ try {
                 </div>
 
                 <div id="tab2" class="tab-content">
-                    <h2>Todo en belleza para mascotas<br>
-                        Como amor se atiente tu peludo</h2>
+                    <center><h2>Todo en belleza para mascotas<br>
+                        Como amor se atiente tu peludo</h2></center>
                     <table>
                             <td> <center>Manejamos el servicio de baño y peluqueria, donde se atienden con pelo largo, corto, cortes al gusto del cliente con asesoria de profesional.<br>
 
@@ -336,11 +336,11 @@ try {
 
                 <div class="company-info">
                     <h2 class="section-title">Información de la Empresa</h2>
-                    <p class="company-info-text">Somos fabricantes y distribuidores mayoristas de productos de belleza y
-                        cuidado personal con tiendas en la ciudad de Bogotá, Colombia.</p>
+                    <p class="company-info-text">Somos tienda fisica del cuidado de tu mascota, donde puedes encontrar diferentes servicios para tu mascota, como grooming, medicina, pet shop y vacunaciones, estamos localizados en la ciudad de bogota</p>
                     <p class="company-info-item"><i class="fa-solid fa-phone"></i> +57 320 3778777</p>
-                    <p class="company-info-item"><i class="fa-regular fa-envelope"></i> cosmeticos@ejemplo.com</p>
-                    <p class="company-info-item"><i class="fa-solid fa-location-dot"></i> DG 60 D Sur</p>
+                    <p class="company-info-item"><i class="fa-regular fa-envelope"></i> ciudadcaninavet@ejemplo.com</p>
+                    <p class="company-info-item"><i class="fa-solid fa-location-dot"></i> carrera 62 # 167-11</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7952.226700209515!2d-74.06130763246266!3d4.750338012903194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f85a6923946cd%3A0xaa100ebe70e38f1c!2sCIUDAD%20CANINA%20VETERINARIA!5e0!3m2!1ses-419!2sco!4v1725464181474!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     <div class="ontamos_logos">
                         <a href="https://web.facebook.com/profile.php?id=100092421275450"><i
                                 class="fa-brands fa-facebook"></i></a>
@@ -354,7 +354,7 @@ try {
 
             </div>
         </section>
-        <p class="foter">&copy; 2023 Tu Tienda de Cosméticos. Todos los derechos reservados.</p>
+        <p class="foter">&copy;2024 Tu tienda para confiar tu peludo. Todos los derechos reservados.</p>
     </footer>
     <script src="JS/carrito.js"></script>
     <script>

@@ -23,13 +23,13 @@ try {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/sistema-productos.css">
     <script src="https://kit.fontawesome.com/eb36e646d1.js" crossorigin="anonymous"></script>
-    <title>Query Productos</title>
+    <title>inventario productos Stock</title>
 </head>
 <body>
     <header>
             <div class="logo-account-navbar">
                 <div class="logo">
-                    <a href="index.php"><img src="IMG/Logo_Paradise_cosmetics.png" id="logo-header"></a>
+                    <a href="index.php"><img src="IMG/Logo-pet.png" id="logo-header"></a>
                 </div>
             </div>
             <div class="texto-rosa-header nav-list-rosa">
