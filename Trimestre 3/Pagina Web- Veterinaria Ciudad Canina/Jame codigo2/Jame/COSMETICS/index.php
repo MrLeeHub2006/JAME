@@ -19,6 +19,13 @@ try {
 ?>
 <!DOCTYPE html>
 <html lang="en">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
 
 <head>
 
@@ -78,11 +85,37 @@ try {
     </header>
 
     <main>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/COSMETICS/IMG/Banner1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="/COSMETICS/IMG/Banner1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="/COSMETICS/IMG/Banner1.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
         <section class="section-introduction">
             <div class="text-introduction">
                 <h1>Bienvenido a Veterinaria Ciudad Canina</h1>
                 <p>Descubre la mejor gama de cuidado y servicios para la mascota</p>
-                <a href="index.php#productos"><button class="btn-introduction">Conocer más</button></a>
+                <a href="index.php#nosotros"><button class="btn-introduction">Conocer más</button></a>
             </div>
 
             <a name="productos"></a>
@@ -138,6 +171,7 @@ try {
                 }
                 ?>
             </div>
+        <a name="nosotros"></a>
         </section>
         <section class="section-about-us">
             <div class="container-about-us">
@@ -224,7 +258,7 @@ try {
             }
 
         </style>    
-        <div class="container-servicios section-servicios">
+        <div class="">
 
                 <div class="tabs">
                     <button class="tab-link active" onclick="openTab(event, 'tab1')">Consulta medica</button>
@@ -234,12 +268,12 @@ try {
                 </div>
 
                 <div id="tab1" class="tab-content active ">
-                    <center><h2>Consultas medicas especializadas</h2></center>
-                    <table>               
-                            <td> <center>
+                    <h2>Consultas medicas especializadas</h2>
+                    <table class="section-servicios">               
+                            <td> 
                                 En la veterinaria Ciudad Canina, tenemos servicio de consulta medica con un medico <br>
                                 veterinario con mas de 20 años de experiencia en donde tambien contamos con servicios<br>
-                                de esterilizacion, todo tipo de vacunaciones, recomendaciones, controles.</td></center>
+                                de esterilizacion, todo tipo de vacunaciones, recomendaciones, controles.</td>
                                 <td>
                                     <img src="max.png" alt="expopet colombia"><br>
                                 Hola comoe stas esto es una prubea
@@ -249,14 +283,14 @@ try {
                 </div>
 
                 <div id="tab2" class="tab-content">
-                    <center><h2>Todo en belleza para mascotas<br>
-                        Como amor se atiente tu peludo</h2></center>
-                    <table>
-                            <td> <center>Manejamos el servicio de baño y peluqueria, donde se atienden con pelo largo, corto, cortes al gusto del cliente con asesoria de profesional.<br>
+                    <h2>Todo en belleza para mascotas<br>
+                        Como amor se atiente tu peludo</h2>
+                    <table class="section-servicios">
+                            <td> Manejamos el servicio de baño y peluqueria, donde se atienden con pelo largo, corto, cortes al gusto del cliente con asesoria de profesional.<br>
 
                             Adicionalmente se entrega limpieza de oidos corte de uñas y si lavado de dientes. <br>
 
-                            Si desea agendar un baño para su mascota, puede hacerlo por este medio o puede acercarse a la veterinaria y alla le haran el respectivo agendamiento.</td></center>
+                            Si desea agendar un baño para su mascota, puede hacerlo por este medio o puede acercarse a la veterinaria y alla le haran el respectivo agendamiento.</td>
                                 <td>
                                     <img src="max.png" alt="expopet colombia"><br>
                                 Hola comoe stas esto es una prubea
@@ -267,10 +301,10 @@ try {
                 <div id="tab3" class="tab-content">
                     <h2>Realiza tus agendamientos<br>
                         para el tiempo que desees, tanto pedidos como servicios</h2>
-                <table>
-                            <td> <center>Tenemos servicio de agendamiento en donde puedes agendar desde dias antes para guardar <br>el cupo para que su mascota sea atendida de la mejor manera.<br><br>
+                <table class="section-servicios">
+                            <td> Tenemos servicio de agendamiento en donde puedes agendar desde dias antes para guardar <br>el cupo para que su mascota sea atendida de la mejor manera.<br><br>
 
-                                    Tambien tenemos servicio de agendamiento de pedidos, donde puede pasar a <br>recoger el pedido en el establecimiento con el respectivo pago.</td></center>
+                                    Tambien tenemos servicio de agendamiento de pedidos, donde puede pasar a <br>recoger el pedido en el establecimiento con el respectivo pago.</td>
                                 <td>
                                     <img src="max.png" alt="expopet colombia"><br>
                                 Hola comoe stas esto es una prubea
@@ -281,10 +315,11 @@ try {
                         <div id="tab4" class="tab-content">
                     <h2>Servicios adicionales <br>
                         con clientes</h2>
-                <table>
-                            <td> <center>En la veterinaria, nos importa mucho la comunicacion con nuestros clientes por eso tenemos atencion virtual <br>por medio de WhatsApp, Gmail y tambien tenemos servicio de recordatorio por medio de un mensaje SMS donde se le recordara sobre su agendamiento</td></center>
+                <table class="section-servicios">
+                            <td> En la veterinaria, nos importa mucho la comunicacion con nuestros clientes por eso tenemos atencion virtual <br>por medio de WhatsApp, Gmail y tambien tenemos servicio de recordatorio por 
+                            <br>medio de un mensaje SMS donde se le recordara sobre su agendamiento</td>
                                 <td>
-                                    <img src="max.png" alt="expopet colombia"><br>
+                                    <img src="/IMG/agrocampo.png" alt="expopet colombia"><br>
                                 Hola comoe stas esto es una prubea
                             </td>
                         </tr>
@@ -452,6 +487,18 @@ try {
 
         });
     </script>
-</body>
 
+
+
+  </body>
+     <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
 </html>
