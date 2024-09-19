@@ -412,6 +412,7 @@ try {
         </section>
         <p class="foter">&copy;2024 Tu tienda para confiar tu peludo. Todos los derechos reservados.</p>
     </footer>
+    
     <script src="JS/carrito.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {

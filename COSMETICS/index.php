@@ -199,6 +199,128 @@ try {
                 </p>
         </div>
         </section>
+        <style>
+            .tabs button {
+                background-color: #2d9cf7;
+                border: 1px;
+                outline: none;
+                padding: 14px 16px;
+                cursor: pointer;
+                transition: background-color 0.5s;
+                flex: 1;
+                font-size: 17px;
+            }
+
+            .tabs button:hover {
+                background-color: #ddd;
+            }
+
+            .tabs button.active {
+                background-color: #ccc;
+            }
+
+            .tab-content {
+                display: none;
+                padding: 20px;
+                border-top: none;
+                flex-direction: row;
+            }
+
+            .tab-content.active {
+                display: block;
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 10px;
+            }
+
+            th,
+            td {
+                text-align: left;
+                padding: 18px;
+            }
+
+            th {
+                background-color: #f2f2f2;
+            }
+            h2 {
+
+                color: #2d9cf7;
+            }
+
+        </style>    
+        <div class="">
+
+                <div class="tabs">
+                    <button class="tab-link active" onclick="openTab(event, 'tab1')">Consulta medica</button>
+                    <button class="tab-link" onclick="openTab(event, 'tab2')">Servicio de grooming</button>
+                    <button class="tab-link" onclick="openTab(event, 'tab3')">Agendamiento de citas</button>
+                    <button class="tab-link" onclick="openTab(event, 'tab4')">Pedidos y servicios adicionales</button>
+                </div>
+
+                <div id="tab1" class="tab-content active ">
+                    <h2>Consultas medicas especializadas</h2>
+                    <table class="section-servicios">               
+                            <td> 
+                                En la veterinaria Ciudad Canina, tenemos servicio de consulta medica con un medico <br>
+                                veterinario con mas de 20 años de experiencia en donde tambien contamos con servicios<br>
+                                de esterilizacion, todo tipo de vacunaciones, recomendaciones, controles.</td>
+                                <td>
+                                    <img src="max.png" alt="expopet colombia"><br>
+                                Hola comoe stas esto es una prubea
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div id="tab2" class="tab-content">
+                    <h2>Todo en belleza para mascotas<br>
+                        Como amor se atiente tu peludo</h2>
+                    <table class="section-servicios">
+                            <td> Manejamos el servicio de baño y peluqueria, donde se atienden con pelo largo, corto, cortes al gusto del cliente con asesoria de profesional.<br>
+
+                            Adicionalmente se entrega limpieza de oidos corte de uñas y si lavado de dientes. <br>
+
+                            Si desea agendar un baño para su mascota, puede hacerlo por este medio o puede acercarse a la veterinaria y alla le haran el respectivo agendamiento.</td>
+                                <td>
+                                    <img src="max.png" alt="expopet colombia"><br>
+                                Hola comoe stas esto es una prubea
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="tab3" class="tab-content">
+                    <h2>Realiza tus agendamientos<br>
+                        para el tiempo que desees, tanto pedidos como servicios</h2>
+                <table class="section-servicios">
+                            <td> Tenemos servicio de agendamiento en donde puedes agendar desde dias antes para guardar <br>el cupo para que su mascota sea atendida de la mejor manera.<br><br>
+
+                                    Tambien tenemos servicio de agendamiento de pedidos, donde puede pasar a <br>recoger el pedido en el establecimiento con el respectivo pago.</td>
+                                <td>
+                                    <img src="max.png" alt="expopet colombia"><br>
+                                Hola comoe stas esto es una prubea
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                        <div id="tab4" class="tab-content">
+                    <h2>Servicios adicionales <br>
+                        con clientes</h2>
+                <table class="section-servicios">
+                            <td> En la veterinaria, nos importa mucho la comunicacion con nuestros clientes por eso tenemos atencion virtual <br>por medio de WhatsApp, Gmail y tambien tenemos servicio de recordatorio por 
+                            <br>medio de un mensaje SMS donde se le recordara sobre su agendamiento</td>
+                                <td>
+                                    <img src="/IMG/agrocampo.png" alt="expopet colombia"><br>
+                                Hola comoe stas esto es una prubea
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+        
+        </div>
         <a name="contact-info"></a>
         <section class="contact-info">
             <div class="container-contact-info">
@@ -250,11 +372,53 @@ try {
 
         </div>
 
+        
+
     </main>
 
     <footer>
-        <p>&copy; 2023 Tu Tienda de Cosméticos. Todos los derechos reservados.</p>
+        <section class="contact-info">
+            <div class="container-contact-info">
+                <div class="contact-form">
+                    <h2 class="section-title">Contacto</h2>
+                    <p>Tu opinión es muy importante para nosotros. Te invitamos a compartir todas sus preguntas, quejas
+                        y reclamos para que juntos podamos mejorar y brindarles
+                        una experiencia excepcional.</p>
+                    <form action="PHP/correo.php" method="post">
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre" required> <br>
+
+                        <input type="email" id="correo" name="correo" placeholder="Correo" required> <br>
+
+                        <textarea id="mensaje" name="mensaje" style="resize: none; height: 90px;"
+                            placeholder="Mensaje..." required></textarea> <br>
+
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+
+                <div class="company-info">
+                    <h2 class="section-title">Información de la Empresa</h2>
+                    <p class="company-info-text">Somos tienda fisica del cuidado de tu mascota, donde puedes encontrar diferentes servicios para tu mascota, como grooming, medicina, pet shop y vacunaciones, estamos localizados en la ciudad de bogota</p>
+                    <p class="company-info-item"><i class="fa-solid fa-phone"></i> +57 320 3778777</p>
+                    <p class="company-info-item"><i class="fa-regular fa-envelope"></i> ciudadcaninavet@ejemplo.com</p>
+                    <p class="company-info-item"><i class="fa-solid fa-location-dot"></i> carrera 62 # 167-11</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7952.226700209515!2d-74.06130763246266!3d4.750338012903194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f85a6923946cd%3A0xaa100ebe70e38f1c!2sCIUDAD%20CANINA%20VETERINARIA!5e0!3m2!1ses-419!2sco!4v1725464181474!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="ontamos_logos">
+                        <a href="https://web.facebook.com/profile.php?id=100092421275450"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a
+                            href="https://api.whatsapp.com/send/?phone=%2B573124852078&text&type=phone_number&app_absent=0"><i
+                                class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/laabejita22/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <p class="foter">&copy;2024 Tu tienda para confiar tu peludo. Todos los derechos reservados.</p>
     </footer>
+    
     <script src="JS/carrito.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
