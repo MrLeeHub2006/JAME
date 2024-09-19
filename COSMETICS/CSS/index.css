@@ -68,7 +68,7 @@ header {
     width: 100%;
     height: 40px;
     height: auto;
-    background-color: #ffcadd;
+    background-color: #2d9cf7;
     padding: 10px;
 }
 .logo-account-navbar{
@@ -135,7 +135,7 @@ main{
     margin-bottom: 40px;
 }
 .btn-introduction {
-    background-color: #ffcadd;
+    background-color: #2d9cf7;
     color: #000;
     padding: 10px 20px;
     border: none;
@@ -145,7 +145,7 @@ main{
     transition: .3s;
 }
 .btn-introduction:hover{
-    background-color: #ffb8d2;
+    background-color: #2d9cf7;
 }
 
 /* Estilo de la sección de Productos*/
@@ -200,7 +200,7 @@ main{
     height: 20%;
 }
 .agregar-carrito-btn{
-    background-color: #ffcadd;
+    background-color: #2d9cf7;
     padding: 5px 20px;
     border: solid 0.5px rgba(0, 0, 0, 0.193);
     border-radius: 30px;
@@ -212,7 +212,7 @@ main{
     width: 250px;
     padding: 5px;
     margin: 50px 30px 0px;
-    background-color: #ffcadd;
+    background-color: #2d9cf7;
     border: solid 0.5px rgba(0, 0, 0, 0.1);
     border-radius: 30px;
     cursor: pointer;
@@ -320,7 +320,7 @@ main{
 }
 .company-info-item i{
     width: 20px;
-    color: #ff7eab;
+    color: #2d9cf7;
 }
 .fa-brands{
     height: 60px;
@@ -328,7 +328,7 @@ main{
     margin: 20px;
     font-size: 40px;
     padding: 10px;
-    background-color: #ffcadd;
+    background-color: #2d9cf7;
     border-radius: 50%;
     box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
 }
@@ -367,7 +367,7 @@ footer {
     margin: 10px 0px;
 }
 .carrito button{
-    background-color: #ffcadd;
+    background-color: #2d9cf7;
     padding: 5px 30px;    
     margin: 0px 20px;
     border: solid 1px #0000002b;
@@ -375,7 +375,7 @@ footer {
     cursor: pointer;
 }
 .carrito button:hover{
-    background-color: #ffb8d2;
+    background-color: #2d9cf7;
     transition: .2s;
 }
 
