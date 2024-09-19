@@ -20,13 +20,15 @@ try {
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/index.css">
     <link rel="shortcut icon" href="img/LOGO.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/eb36e646d1.js" crossorigin="anonymous"></script>
-    <title>Paradise Cosmetics</title>
+    <title>Inicio Ciudad Canina</title>
+    <link rel="icon" href="/img/logovet.png">
 </head>
 <body>
     <header>
