@@ -191,11 +191,9 @@ try {
             <div class="container-about-us">
                 <h2>Acerca de Nosotros</h2>
                 <p>
-                    Somos una marca de cosméticos comprometida con la belleza natural y sencilla. Nuestra misión es proporcionar productos de alta calidad 
-                    que realcen tu belleza de manera natural. Creemos en la simplicidad y la autenticidad, y nuestros productos están diseñados para realzar tu belleza única.
+                Nuestro equipo está conformado por profesionales altamente capacitados, con amplia experiencia en medicina veterinaria y un profundo amor por los animales. Cada uno de nosotros entiende lo importante que son las mascotas en la vida de nuestros clientes, y por eso brindamos un servicio integral, personalizado y con un enfoque humano, cuidando tanto a las mascotas como a sus dueños.
                     <br>
-                    En Cosméticos Sencillos, nos esforzamos por utilizar ingredientes naturales y sostenibles en nuestros productos. Nos enorgullecemos 
-                    de ser una marca amigable con el medio ambiente y libre de crueldad animal. Queremos que te sientas bien contigo misma y con el mundo que te rodea.
+                   hemos trabajado con dedicación para ofrecer atención veterinaria de alta calidad, comprometidos con la vida y el bienestar de cada uno de nuestros pacientes.
                 </p>
         </div>
         </section>
@@ -267,9 +265,9 @@ try {
                                 En la veterinaria Ciudad Canina, tenemos servicio de consulta medica con un medico <br>
                                 veterinario con mas de 20 años de experiencia en donde tambien contamos con servicios<br>
                                 de esterilizacion, todo tipo de vacunaciones, recomendaciones, controles.</td>
-                                <td>
-                                    <img src="max.png" alt="expopet colombia"><br>
-                                Hola comoe stas esto es una prubea
+                            
+                            <td>
+                                    <img src="https://static.vecteezy.com/system/resources/thumbnails/024/585/326/small_2x/3d-happy-cartoon-doctor-cartoon-doctor-on-transparent-background-generative-ai-png.png"><br>
                             </td>
                         </tr>
                     </table>
@@ -319,63 +317,8 @@ try {
                     </table>
                 </div>
 
-        
-        </div>
-        <a name="contact-info"></a>
-        <section class="contact-info">
-            <div class="container-contact-info">
-                <div class="contact-form">
-                    <h2 class="section-title">Contacto</h2>
-                    <p>Tu opinión es muy importante para nosotros. Te invitamos a compartir todas sus preguntas, quejas y reclamos para que juntos podamos mejorar y brindarles 
-                        una experiencia excepcional.</p>
-                    <form action="PHP/correo.php" method="post">
-                        <input type="text" id="nombre" name="nombre" placeholder="Nombre" required> <br>
     
-                        <input type="email" id="correo" name="correo" placeholder="Correo" required> <br>
-    
-                        <textarea id="mensaje" name="mensaje" style="resize: none; height: 90px;" placeholder="Mensaje..." required></textarea> <br>
-    
-                        <button type="submit">Enviar</button>
-                    </form>
-                </div>
-    
-                <div class="company-info">
-                    <h2 class="section-title">Información de la Empresa</h2>
-                    <p class="company-info-text">Somos fabricantes y distribuidores mayoristas de productos de belleza y cuidado personal con tiendas en la ciudad de Bogotá, Colombia.</p>
-                    <p class="company-info-item"><i class="fa-solid fa-phone"></i> +57 320 3778777</p>
-                    <p class="company-info-item"><i class="fa-regular fa-envelope"></i> cosmeticos@ejemplo.com</p>
-                    <p class="company-info-item"><i class="fa-solid fa-location-dot"></i> DG 60 D Sur</p>
-                    <div class="ontamos_logos">
-                        <a href="https://web.facebook.com/profile.php?id=100092421275450"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://api.whatsapp.com/send/?phone=%2B573124852078&text&type=phone_number&app_absent=0"><i class="fa-brands fa-whatsapp"></i></a>
-                        <a href="https://www.instagram.com/laabejita22/"><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-                </div>
-                
-                
-            </div>
-        </section>
-        <a name="carritox"></a>
-        <div class="carrito" style="display: none;">
-            <h3>Carrito de Compras</h3>
-            <div class="carrito-contenido">
-                <!-- Aquí se mostrarán los productos del carrito -->
-            </div>
-            <div class="carrito-total">
-                <p>Total: <span id="total-carrito">0 COP</span></p>
-                <button id="vaciar-carrito">Vaciar Carrito</button>
-                <button id="comprar">Comprar</button>
-            </div>
-            <form id="carrito-form" action="PHP/compra.php" method="post" style="display: none;">
-                <input type="hidden" name="carrito" id="carrito-input">
-            </form>
-
-        </div>
-
-        
-
-    </main>
-
+           
     <footer>
         <section class="contact-info">
             <div class="container-contact-info">
@@ -404,12 +347,12 @@ try {
                     <p class="company-info-item"><i class="fa-solid fa-location-dot"></i> carrera 62 # 167-11</p>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7952.226700209515!2d-74.06130763246266!3d4.750338012903194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f85a6923946cd%3A0xaa100ebe70e38f1c!2sCIUDAD%20CANINA%20VETERINARIA!5e0!3m2!1ses-419!2sco!4v1725464181474!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     <div class="ontamos_logos">
-                        <a href="https://web.facebook.com/profile.php?id=100092421275450"><i
+                        <a href="https://www.facebook.com/"><i
                                 class="fa-brands fa-facebook"></i></a>
                         <a
-                            href="https://api.whatsapp.com/send/?phone=%2B573124852078&text&type=phone_number&app_absent=0"><i
+                            href="https://web.whatsapp.com/"><i
                                 class="fa-brands fa-whatsapp"></i></a>
-                        <a href="https://www.instagram.com/laabejita22/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
                     </div>
                 </div>
 
