@@ -2,8 +2,8 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Servidor: localhost:3307
--- Tiempo de generación: 09-09-2024 a las 20:41:50
+-- Servidor: 127.0.0.1
+-- Tiempo de generación: 30-09-2024 a las 07:39:58
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -234,7 +234,8 @@ CREATE TABLE `usuarios` (
 INSERT INTO `usuarios` (`id_usuario`, `nombre_completo`, `correo_electronico`, `usuario`, `contraseña`, `direccion`, `telefono`, `imagen`, `fecha_registro`, `id_rol`) VALUES
 (1, 'Andrés Gutiérrez Hurtado', 'andres52885241@gmail.com', 'AndresJajaa', '1111', '68 D SUR 70 C 31', 3209202177, 'USUARIOS_FOTOS/1.jpg', '2023-09-07 19:33:21', 1),
 (2, 'Samuel Useche Chaparro', 'samuel@gmail.com', 'SamuUseche', '1111', 'El valle de la sierra', 3209207777, 'USUARIOS_FOTOS/2.jpg', '2023-09-07 20:59:42', 2),
-(3, 'Alisson', 'alison@gmail.com', 'Alisson', '1111', 'Dirección', 3109999999, 'USUARIOS_FOTOS/3.jpg', '2023-10-03 19:33:21', 1);
+(3, 'Alisson', 'alison@gmail.com', 'Alisson', '1111', 'Dirección', 3109999999, 'USUARIOS_FOTOS/3.jpg', '2023-10-03 19:33:21', 1),
+(4, 'martin', 'misterlee272006@gmail.com', 'martinlee', '$2y$10$PdVFzzhsC.EUo8C/V5F.h.SODYF9e2fCLveDcOiKxn1/.AefPSdm6', NULL, NULL, 'USUARIOS_FOTOS/nf.jpg', '2024-09-29 22:53:38', 1);
 
 -- --------------------------------------------------------
 
@@ -395,7 +396,7 @@ ALTER TABLE `roles`
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de la tabla `venta`
