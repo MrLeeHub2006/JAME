@@ -62,7 +62,7 @@ INSERT INTO `usuarios` (`id_usuario`, `nombre_completo`, `correo_electronico`, `
 
 -- Inserción de productos
 INSERT INTO `productos` (`id_producto`, `nombre_producto`, `descripcion`, `precio`, `stock`, `imagen`) VALUES
-(1, 'Lápiz labial rojo', 'Lápiz labial de color rojo intenso', 19000, 50, ''),
+(1, 'Comida para perro', 'Purina dog show', 19000, 50, 'PRODUCTOS_FOTOS/2.jpg'),
 (2, 'Crema hidratante', 'Crema facial hidratante para pieles secas', 26000, 20, 'PRODUCTOS_FOTOS/2.jpg'),
 (3, 'Base de maquillaje', 'Base de maquillaje de larga duración', 30000, 40, 'PRODUCTOS_FOTOS/3.jpg'),
 (4, 'Máscara de pestañas', 'Máscara de pestañas resistente al agua', 19000, 20, 'PRODUCTOS_FOTOS/4.jpg'),
