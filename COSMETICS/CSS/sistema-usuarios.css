@@ -37,7 +37,7 @@ header {
     width: 100%;
     height: 40px;
     height: auto;
-    background-color: #ffcadd;
+    background-color: #2d9cf7;
     padding: 10px;
 }
 .logo-account-navbar{
@@ -107,10 +107,10 @@ button{
     padding: 5px 10px;
     border: solid 1px rgba(0, 0, 0, .4) ;
     border-radius: 3px;
-    background-color: #ffcadd;
+    background-color: #2d9cf7;
     cursor: pointer;
 }
 button:hover{
-    background-color: #dfb2c3;
+    background-color: #2d9cf7;
     transition: .2s;
 }

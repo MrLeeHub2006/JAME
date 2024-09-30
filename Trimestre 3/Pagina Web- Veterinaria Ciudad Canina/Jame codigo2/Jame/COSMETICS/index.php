@@ -296,8 +296,7 @@ try {
                                 veterinario con mas de 20 años de experiencia en donde tambien contamos con servicios<br>
                                 de esterilizacion, todo tipo de vacunaciones, recomendaciones, controles.</td>
                                 <td>
-                                    <img src="max.png" alt="expopet colombia"><br>
-                                Hola comoe stas esto es una prubea
+                                    <img src="https://static.vecteezy.com/system/resources/thumbnails/024/585/326/small_2x/3d-happy-cartoon-doctor-cartoon-doctor-on-transparent-background-generative-ai-png.png"><br>
                             </td>
                         </tr>
                     </table>
@@ -312,9 +311,8 @@ try {
                             Adicionalmente se entrega limpieza de oidos corte de uñas y si lavado de dientes. <br>
 
                             Si desea agendar un baño para su mascota, puede hacerlo por este medio o puede acercarse a la veterinaria y alla le haran el respectivo agendamiento.</td>
-                                <td>
-                                    <img src="max.png" alt="expopet colombia"><br>
-                                Hola comoe stas esto es una prubea
+                            <td>
+                                    <img src="https://static.vecteezy.com/system/resources/thumbnails/024/585/326/small_2x/3d-happy-cartoon-doctor-cartoon-doctor-on-transparent-background-generative-ai-png.png"><br>
                             </td>
                         </tr>
                     </table>
@@ -326,9 +324,8 @@ try {
                             <td> Tenemos servicio de agendamiento en donde puedes agendar desde dias antes para guardar <br>el cupo para que su mascota sea atendida de la mejor manera.<br><br>
 
                                     Tambien tenemos servicio de agendamiento de pedidos, donde puede pasar a <br>recoger el pedido en el establecimiento con el respectivo pago.</td>
-                                <td>
-                                    <img src="max.png" alt="expopet colombia"><br>
-                                Hola comoe stas esto es una prubea
+                                    <td>
+                                    <img src="https://static.vecteezy.com/system/resources/thumbnails/024/585/326/small_2x/3d-happy-cartoon-doctor-cartoon-doctor-on-transparent-background-generative-ai-png.png"><br>
                             </td>
                         </tr>
                     </table>
@@ -339,9 +336,8 @@ try {
                 <table class="section-servicios">
                             <td> En la veterinaria, nos importa mucho la comunicacion con nuestros clientes por eso tenemos atencion virtual <br>por medio de WhatsApp, Gmail y tambien tenemos servicio de recordatorio por 
                             <br>medio de un mensaje SMS donde se le recordara sobre su agendamiento</td>
-                                <td>
-                                    <img src="/IMG/agrocampo.png" alt="expopet colombia"><br>
-                                Hola comoe stas esto es una prubea
+                            <td>
+                                    <img src="https://static.vecteezy.com/system/resources/thumbnails/024/585/326/small_2x/3d-happy-cartoon-doctor-cartoon-doctor-on-transparent-background-generative-ai-png.png"><br>
                             </td>
                         </tr>
                     </table>

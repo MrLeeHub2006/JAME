@@ -2,7 +2,7 @@
 $dbhost = "localhost";
 $dbuser = "root";
 $dbpass = "";
-$dbname = "paradise_cosmetics_db";
+$dbname = "jame";
 
 $conexion = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
 if (!$conexion){

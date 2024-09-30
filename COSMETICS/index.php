@@ -79,7 +79,7 @@ try {
   <div class="collapse navbar-collapse" id="navbarSupportedContent">    
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#carouselExampleIndicators">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="index.php#productos">Productos</a>
@@ -90,7 +90,7 @@ try {
           </a>
           <ul class="dropdown-menu dropdown-menu-dark">
             <li><a class="dropdown-item" href="#">Grooming</a></li>
-            <li><a class="dropdown-item" href="#">Medicina</a></li>
+            <li><a class="dropdown-item" h ref="#">Medicina</a></li>
             <li><a class="dropdown-item" href="#">Consultas</a></li>
           </ul>
         </li>
@@ -251,71 +251,89 @@ try {
         </style>    
         <div class="">
 
-                <div class="tabs">
-                    <button class="tab-link active" onclick="openTab(event, 'tab1')">Consulta medica</button>
-                    <button class="tab-link" onclick="openTab(event, 'tab2')">Servicio de grooming</button>
-                    <button class="tab-link" onclick="openTab(event, 'tab3')">Agendamiento de citas</button>
-                    <button class="tab-link" onclick="openTab(event, 'tab4')">Pedidos y servicios adicionales</button>
-                </div>
+<div class="tabs">
+    <button class="tab-link active" onclick="openTab(event, 'tab1')">Consulta medica</button>
+    <button class="tab-link" onclick="openTab(event, 'tab2')">Servicio de grooming</button>
+    <button class="tab-link" onclick="openTab(event, 'tab3')">Agendamiento de citas</button>
+    <button class="tab-link" onclick="openTab(event, 'tab4')">Pedidos y servicios adicionales</button>
+</div>
 
-                <div id="tab1" class="tab-content active ">
-                    <h2>Consultas medicas especializadas</h2>
-                    <table class="section-servicios">               
-                            <td> 
-                                En la veterinaria Ciudad Canina, tenemos servicio de consulta medica con un medico <br>
-                                veterinario con mas de 20 años de experiencia en donde tambien contamos con servicios<br>
-                                de esterilizacion, todo tipo de vacunaciones, recomendaciones, controles.</td>
-                            
-                            <td>
-                                    <img src="https://static.vecteezy.com/system/resources/thumbnails/024/585/326/small_2x/3d-happy-cartoon-doctor-cartoon-doctor-on-transparent-background-generative-ai-png.png"><br>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
+<div id="tab1" class="tab-content active ">
+    <h2>Consultas medicas especializadas</h2>
+    <table class="section-servicios">               
+            <td> 
+                En la veterinaria Ciudad Canina, tenemos servicio de consulta medica con un medico <br>
+                veterinario con mas de 20 años de experiencia en donde tambien contamos con servicios<br>
+                de esterilizacion, todo tipo de vacunaciones, recomendaciones, controles.</td>
+                <td>
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/024/585/326/small_2x/3d-happy-cartoon-doctor-cartoon-doctor-on-transparent-background-generative-ai-png.png"><br>
+            </td>
+        </tr>
+    </table>
+</div>
 
-                <div id="tab2" class="tab-content">
-                    <h2>Todo en belleza para mascotas<br>
-                        Como amor se atiente tu peludo</h2>
-                    <table class="section-servicios">
-                            <td> Manejamos el servicio de baño y peluqueria, donde se atienden con pelo largo, corto, cortes al gusto del cliente con asesoria de profesional.<br>
+<div id="tab2" class="tab-content">
+    <h2>Todo en belleza para mascotas<br>
+        Como amor se atiente tu peludo</h2>
+    <table class="section-servicios">
+            <td> Manejamos el servicio de baño y peluqueria, donde se atienden con pelo largo, corto, cortes al gusto del cliente con asesoria de profesional.<br>
 
-                            Adicionalmente se entrega limpieza de oidos corte de uñas y si lavado de dientes. <br>
+            Adicionalmente se entrega limpieza de oidos corte de uñas y si lavado de dientes. <br>
 
-                            Si desea agendar un baño para su mascota, puede hacerlo por este medio o puede acercarse a la veterinaria y alla le haran el respectivo agendamiento.</td>
-                                <td>
-                                    <img src="max.png" alt="expopet colombia"><br>
-                                Hola comoe stas esto es una prubea
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div id="tab3" class="tab-content">
-                    <h2>Realiza tus agendamientos<br>
-                        para el tiempo que desees, tanto pedidos como servicios</h2>
-                <table class="section-servicios">
-                            <td> Tenemos servicio de agendamiento en donde puedes agendar desde dias antes para guardar <br>el cupo para que su mascota sea atendida de la mejor manera.<br><br>
+            Si desea agendar un baño para su mascota, puede hacerlo por este medio o puede acercarse a la veterinaria y alla le haran el respectivo agendamiento.</td>
+            <td>
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/024/585/326/small_2x/3d-happy-cartoon-doctor-cartoon-doctor-on-transparent-background-generative-ai-png.png"><br>
+            </td>
+        </tr>
+    </table>
+</div>
+<div id="tab3" class="tab-content">
+    <h2>Realiza tus agendamientos<br>
+        para el tiempo que desees, tanto pedidos como servicios</h2>
+<table class="section-servicios">
+            <td> Tenemos servicio de agendamiento en donde puedes agendar desde dias antes para guardar <br>el cupo para que su mascota sea atendida de la mejor manera.<br><br>
 
-                                    Tambien tenemos servicio de agendamiento de pedidos, donde puede pasar a <br>recoger el pedido en el establecimiento con el respectivo pago.</td>
-                                <td>
-                                    <img src="max.png" alt="expopet colombia"><br>
-                                Hola comoe stas esto es una prubea
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                        <div id="tab4" class="tab-content">
-                    <h2>Servicios adicionales <br>
-                        con clientes</h2>
-                <table class="section-servicios">
-                            <td> En la veterinaria, nos importa mucho la comunicacion con nuestros clientes por eso tenemos atencion virtual <br>por medio de WhatsApp, Gmail y tambien tenemos servicio de recordatorio por 
-                            <br>medio de un mensaje SMS donde se le recordara sobre su agendamiento</td>
-                                <td>
-                                    <img src="/IMG/agrocampo.png" alt="expopet colombia"><br>
-                                Hola comoe stas esto es una prubea
-                            </td>
-                        </tr>
-                    </table>
-                </div>
+                    Tambien tenemos servicio de agendamiento de pedidos, donde puede pasar a <br>recoger el pedido en el establecimiento con el respectivo pago.</td>
+                    <td>
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/024/585/326/small_2x/3d-happy-cartoon-doctor-cartoon-doctor-on-transparent-background-generative-ai-png.png"><br>
+            </td>
+        </tr>
+    </table>
+</div>
+        <div id="tab4" class="tab-content">
+    <h2>Servicios adicionales <br>
+        con clientes</h2>
+<table class="section-servicios">
+            <td> En la veterinaria, nos importa mucho la comunicacion con nuestros clientes por eso tenemos atencion virtual <br>por medio de WhatsApp, Gmail y tambien tenemos servicio de recordatorio por 
+            <br>medio de un mensaje SMS donde se le recordara sobre su agendamiento</td>
+            <td>
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/024/585/326/small_2x/3d-happy-cartoon-doctor-cartoon-doctor-on-transparent-background-generative-ai-png.png"><br>
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+</div>
+<script>    
+                function openTab(evt, tabName) {
+                var i, tabcontent, tablinks;
+
+                tabcontent = document.getElementsByClassName("tab-content");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].classList.remove("active");
+                }
+
+                tablinks = document.getElementsByClassName("tab-link");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].classList.remove("active");
+                }
+
+                document.getElementById(tabName).classList.add("active");
+                evt.currentTarget.classList.add("active");
+                }
+                </script>
+
 
     
            
