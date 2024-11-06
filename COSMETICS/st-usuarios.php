@@ -4,7 +4,7 @@ try {
     ini_set('display_errors', 1);
     session_start();
 
-    include 'PHP/conexion.php';
+    include 'Config/conexion.php';
     
     $usuario = $_SESSION['username'];
     $id = $_SESSION['id'];
@@ -32,7 +32,7 @@ try {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/LOGO.png" type="image/x-icon">
-    <link rel="stylesheet" href="CSS/sistema-usuarios.css">
+    <link rel="stylesheet" href="Assets/CSS/sistema-usuarios.css">
     <script src="https://kit.fontawesome.com/eb36e646d1.js" crossorigin="anonymous"></script>
     <title>Query Users</title>
 </head>

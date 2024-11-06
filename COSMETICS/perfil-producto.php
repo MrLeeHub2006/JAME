@@ -3,7 +3,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-include 'PHP/conexion.php';
+include 'Config/conexion.php';
 
 if (isset($_GET['id'])){
 
@@ -25,7 +25,7 @@ if (isset($_GET['id'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/perfil-producto.css">
+    <link rel="stylesheet" href="Assets/CSS/perfil-producto.css">
     <title>Perfil de producto</title>
 </head>
 <body>
@@ -75,9 +75,9 @@ if (isset($_GET['id'])){
                 <form action="PHP/foto-producto.php" enctype="multipart/form-data" method="post" style="display:flex; flex-direction:column;">
                 <?php
                     $id = $row['id_producto'];
-                    $imagen = "PRODUCTOS_FOTOS/".$id.".jpg";
+                    $imagen = "Assets/PRODUCTOS_FOTOS/".$id.".jpg";
                     if (!file_exists($imagen)) {
-                        $imagen = "PRODUCTOS_FOTOS/nf.jpg";}
+                        $imagen = "Assets/PRODUCTOS_FOTOS/nf.jpg";}
                 ?>
                 <div class="foto-producto" alt="Usuario" id="usuario-foto" style="background-image: url('<?php echo $imagen; ?>'); background-size: 100% 100%;"></div>
                 <input type="file" name="imagen" id="fileField" value="cambiar foto">
@@ -105,7 +105,7 @@ if (isset($_GET['id'])){
         </div>            
     </main>
     <?php }}?>
-    <script src="js/editar.js"></script>
+    <script src="Assets/JS/editar.js"></script>
     <script>
         document.querySelectorAll('input[type="number"]').forEach(input =>{
             input.oninput = () =>{

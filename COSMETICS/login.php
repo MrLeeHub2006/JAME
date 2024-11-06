@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/login.css">
+    <link rel="stylesheet" href="Assets/CSS/login.css">
     <title>Inicia Sesión</title>
 </head>
 <body>
@@ -41,5 +41,5 @@
         </div>
     </main>
 </body>
-<script src="JS/login.js"></script>
+<script src="Assets/JS/login.js"></script>
 </html>

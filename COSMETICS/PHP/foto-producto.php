@@ -1,6 +1,6 @@
 <?php 
 
-include "conexion.php";
+include "Config/conexion.php";
 
 $idproducto = $_POST['id'];
 
@@ -17,9 +17,9 @@ $ejecutar = mysqli_query($conexion, $query);
     $name = $idproducto.'.'.$tipo;
 
     if(is_uploaded_file($ruta1)){
-        $destino1 = "../PRODUCTOS_FOTOS/".$name; 
+        $destino1 = "Assets/PRODUCTOS_FOTOS/".$name; 
         copy($ruta1, $destino1);
-        $destino2 = "PRODUCTOS_FOTOS/".$name; 
+        $destino2 = "Assets/PRODUCTOS_FOTOS/".$name; 
     }
 
     $query = "UPDATE `productos` SET `imagen`='$destino2' WHERE `id_producto` = $idproducto ";

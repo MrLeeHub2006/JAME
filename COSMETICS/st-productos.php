@@ -4,7 +4,7 @@ try {
     ini_set('display_errors', 1);
     session_start();
 
-    include 'PHP/conexion.php';
+    include 'Config/conexion.php';
         
     $sql = "SELECT * FROM productos";
     $resultado = $conexion->query($sql);
@@ -28,7 +28,7 @@ try {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/sistema-productos.css">
+    <link rel="stylesheet" href="Assets/CSS/sistema-productos.css">
     <script src="https://kit.fontawesome.com/eb36e646d1.js" crossorigin="anonymous"></script>
     <title>STOCK-inventario
     </title>

@@ -1,7 +1,7 @@
 <?php 
 
 session_start();
-include 'conexion.php';
+include 'Config/conexion.php';
 
 $id_usuario = $_POST['id'];
 $nombre_completo = $_POST['txtnombre'];

@@ -1,6 +1,6 @@
 <?php 
 
-include 'conexion.php';
+include 'Config/conexion.php';
 
 $nombre = $_POST['nombre'];
 $correo = $_POST['email'];

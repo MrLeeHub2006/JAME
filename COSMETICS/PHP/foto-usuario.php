@@ -1,6 +1,6 @@
 <?php 
 
-include "conexion.php";
+include "Config/conexion.php";
 
 $idusuario = $_POST['id'];
 
@@ -17,13 +17,13 @@ $ejecutar = mysqli_query($conexion, $query);
     $name = $idusuario.'.'.$tipo;
 
     if(is_uploaded_file($ruta1)){
-        $destino1 = "../USUARIOS_FOTOS/".$name; 
+        $destino1 = "Assets/USUARIOS_FOTOS/".$name; 
         copy($ruta1, $destino1);
-        $destino2 = "USUARIOS_FOTOS/".$name; 
+        $destino2 = "Assets/USUARIOS_FOTOS/".$name; 
     }else if(!is_uploaded_file($ruta1)){
-        $destino1 = "../USUARIOS_FOTOS/nf.jpg"; 
+        $destino1 = "Assets/USUARIOS_FOTOS/nf.jpg"; 
         copy($ruta1, $destino1);
-        $destino2 = "USUARIOS_FOTOS/nf.jpg"; 
+        $destino2 = "Assets/USUARIOS_FOTOS/nf.jpg"; 
     }
 
     $query = "UPDATE `usuarios` SET `imagen`='$destino2' WHERE `id_usuario` = $idusuario ";

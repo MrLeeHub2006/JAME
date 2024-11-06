@@ -3,7 +3,7 @@ try {
     
     error_reporting(0);
     session_start();
-    include 'PHP/conexion.php';
+    include 'Config/conexion.php';
     $usuario = $_SESSION['username'];
     $id = $_SESSION['id'];
     $rol = $_SESSION['rol'];
@@ -31,11 +31,11 @@ try {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/index.css">
-    <link rel="shortcut icon" href="img/LOGO.png" type="image/x-icon">
+    <link rel="stylesheet" href="Assets/CSS/index.css">
+    <link rel="shortcut icon" href="Assets/img/LOGO.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/eb36e646d1.js" crossorigin="anonymous"></script>
     <title>Inicio Ciudad Canina</title>
-    <link rel="icon" href="/img/logovet.png">
+    <link rel="icon" href="Assets/IMG/logovet.png">
 </head>
 <body>
 <header>
@@ -44,7 +44,7 @@ try {
         </div>
         <div class="logo-account-navbar">
             <div class="logo">
-                <a href="index.php"><img src="IMG/logovet.png" id="logo-header"></a>
+                <a href="index.php"><img src="Assets/IMG/logovet.png" id="logo-header"></a>
             </div>
             <div class="nav-search">
                 <input type="text" id="search-input" placeholder="Buscar productos...">
@@ -115,13 +115,13 @@ try {
   </div>
   <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="/IMG/Banner1.png" class="d-block w-100" alt="...">
+                    <img src="Assets/IMG/Banner1.png" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="/IMG/Banner1.png" class="d-block w-100" alt="...">
+                    <img src="Assets/IMG/Banner1.png" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="/IMG/Banner1.png" class="d-block w-100" alt="...">
+                    <img src="Assets/IMG/Banner1.png" class="d-block w-100" alt="...">
                 </div>
             </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -153,9 +153,9 @@ try {
                     <div class="img-producto">
                         <?php
                             $id = $row['id_producto'];
-                            $imagen = "PRODUCTOS_FOTOS/".$id.".jpg";
+                            $imagen = "Assets/PRODUCTOS_FOTOS/".$id.".jpg";
                             if (!file_exists($imagen)) {
-                                $imagen = "PRODUCTOS_FOTOS/nf.jpg";}
+                                $imagen = "Assets/PRODUCTOS_FOTOS/nf.jpg";}
                         ?>
                         <img src="<?php echo $imagen;?>" alt="Producto 1">
                     </div>
@@ -325,7 +325,7 @@ try {
                 }
 
                 tablinks = document.getElementsByClassName("tab-link");
-                for (i = 0; i < tablinks.length; i++) {
+                for (i = 0; i <script tablinks.length; i++) {
                     tablinks[i].classList.remove("active");
                 }
 
@@ -380,7 +380,7 @@ try {
         <p class="foter">&copy;2024 Tu tienda para confiar tu peludo. Todos los derechos reservados.</p>
     </footer>
     
-    <script src="JS/carrito.js"></script>
+    <script src="Assets/JS/carrito.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const mostrarMasBtn = document.getElementById("mostrar-mas-btn");
@@ -432,7 +432,7 @@ try {
                         const imgProducto = document.createElement("div");
                         imgProducto.classList.add("img-producto");
                         const imagen = document.createElement("img");
-                        imagen.src= "PRODUCTOS_FOTOS/" + producto.id_producto + ".jpg";
+                        imagen.src= "Assets/PRODUCTOS_FOTOS/" + producto.id_producto + ".jpg";
                         imgProducto.appendChild(imagen);
                         productoElement.appendChild(imgProducto);
 

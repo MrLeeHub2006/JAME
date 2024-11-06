@@ -4,7 +4,7 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 session_start();
-include 'PHP/conexion.php';
+include 'Config/conexion.php';
 
 $usuario = $_SESSION['username'];
 $id = $_SESSION['id'];
@@ -31,7 +31,7 @@ if ((isset($_GET['id']) and $id == $_GET['id']) || (isset($_GET['id']) and $rol 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/perfil-usuario.css">
+    <link rel="stylesheet" href="Assets/CSS/perfil-usuario.css">
     <title>Perfil de <?php  echo $_SESSION['username']. $rol; ?></title>
 </head>
 <body>
@@ -81,9 +81,9 @@ if ((isset($_GET['id']) and $id == $_GET['id']) || (isset($_GET['id']) and $rol 
                 <form action="PHP/foto-usuario.php" enctype="multipart/form-data" method="post" style="display:flex; flex-direction:column;">
                     <?php
                         $id = $row['id_usuario'];
-                        $imagen = "USUARIOS_FOTOS/".$id.".jpg";
+                        $imagen = "Assets/USUARIOS_FOTOS/".$id.".jpg";
                         if (!file_exists($imagen)) {
-                            $imagen = "USUARIOS_FOTOS/nf.jpg";
+                            $imagen = "Assets/USUARIOS_FOTOS/nf.jpg";
                         }
                     ?>
                     <div class="foto-usuario" alt="Usuario" id="usuario-foto" style="background-image: url('<?php echo $imagen; ?>'); background-size: 100% 100%;"></div>
@@ -132,7 +132,7 @@ if ((isset($_GET['id']) and $id == $_GET['id']) || (isset($_GET['id']) and $rol 
     ';
     }
     ?>
-    <script src="js/editar.js"></script>
+    <script src="Assets/JS/editar.js"></script>
     <script>
         document.querySelectorAll('input[type="number"]').forEach(input =>{
             input.oninput = () =>{
