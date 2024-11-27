@@ -1,6 +1,6 @@
 <?php 
 session_start();
-include 'Config/conexion.php';
+include '../Config/conexion.php';
 
 $query = "INSERT INTO `Productos` (`nombre_producto`, `descripcion`, `precio`, `imagen`) VALUES 
 ('Nombre Producto', 'Descripción breve del producto.', '10000', 'Assets/PRODUCTOS_PHOTOS/nf.jpg');";

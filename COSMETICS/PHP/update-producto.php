@@ -1,7 +1,7 @@
 <?php 
 
 session_start();
-include 'Config/conexion.php';
+include '../Config/conexion.php';
 
 $nombre = $_POST['nombre'];
 $descripcion = $_POST['descripcion'];

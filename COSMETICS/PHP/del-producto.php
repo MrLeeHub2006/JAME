@@ -1,6 +1,6 @@
 <?php 
 session_start();
-include 'Config/conexion.php';
+include '../Config/conexion.php';
 $id = $_POST['id'];
 $query = "DELETE FROM `Productos` WHERE `id_producto` = '".$id."';";
 $ejecutar = mysqli_query($conexion, $query);
