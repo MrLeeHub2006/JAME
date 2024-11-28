@@ -52,21 +52,7 @@ try {
             </div>
 
             <ul class="nav-account">
-                <li><a
-                        href="<?php if (isset($usuario)) {
-                            echo 'perfil-usuario.php?id=' . $id . '';
-                        } else if (!isset($usuario)) {
-                            echo 'login.php';
-                        }
-                        ; ?>"><i
-                            class="fa-regular fa-user"></i>
-                        <?php if (isset($usuario)) {
-                            echo 'MI CUENTA';
-                        } else if (!isset($usuario)) {
-                            echo 'Ingresar';
-                        }
-                        ; ?></a>
-                </li>
+
                 <li><a href="index.php#carritox"><i class="fa-solid fa-cart-shopping"></i> CARRITO</a></li>
             </ul>
         </div>
@@ -86,7 +72,7 @@ try {
       </li>
               <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                        Servicios
+                        <!-- Servicios -->
           </a>
           <ul class="dropdown-menu dropdown-menu-dark">
             <li><a class="dropdown-item" href="#">Grooming</a></li>
@@ -151,13 +137,7 @@ try {
                 ?>
                 <div class="box-producto <?php if ($count > 5) { echo ' hidden' ;}?>">
                     <div class="img-producto">
-                        <?php
-                            $id = $row['id_producto'];
-                            $imagen = "Assets/PRODUCTOS_FOTOS/".$id.".jpg";
-                            if (!file_exists($imagen)) {
-                                $imagen = "Assets/PRODUCTOS_FOTOS/nf.jpg";}
-                        ?>
-                        <img src="<?php echo $imagen;?>" alt="Producto 1">
+                       
                     </div>
                     <div class="info-producto">
                         <h3><?php echo($row['nombre_producto']); ?></h3>
@@ -315,7 +295,7 @@ try {
 
 
 </div>
-<script>    
+<!-- <script>    
                 function openTab(evt, tabName) {
                 var i, tabcontent, tablinks;
 
@@ -332,7 +312,7 @@ try {
                 document.getElementById(tabName).classList.add("active");
                 evt.currentTarget.classList.add("active");
                 }
-                </script>
+                </script> -->
 
 
     

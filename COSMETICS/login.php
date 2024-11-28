@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,24 +8,25 @@
     <link rel="stylesheet" href="Assets/CSS/login.css">
     <title>Inicia Sesión</title>
 </head>
+
 <body>
     <main>
         <div class="contenedor-login">
             <div>
-            <form class="login-form" action="PHP/login.php" method="POST">
-                <h1>Iniciar Sesión</h1>
-                <input type="text" name="usuario" class="login-input" placeholder="Usuario" required> <br>
-                <input type="password" name="contraseña" class="login-input" placeholder="Contraseña" required> <br>
-                <button type="submit">Entra</button>
-            </form>
-            <form class="register-form hidden" action="PHP/register.php" method="POST"> <!-- Agregado el atributo "action" -->
-                <h1>Registrarse</h1>
-                <input type="text" name="nombre" placeholder="Nombres Completos"> <br>
-                <input type="text" name="email" placeholder="Email"> <br>
-                <input type="text" name="usuario" placeholder="Usuario"> <br>
-                <input type="password" name="contraseña" placeholder="Contraseña"> <br>
-                <button type="submit">Registrarse</button>
-            </form>
+                <form class="login-form" action="PHP/login.php" method="POST">
+                    <h1>Iniciar Sesión</h1>
+                    <input type="text" name="usuario" class="login-input" placeholder="Usuario" required> <br>
+                    <input type="password" name="contraseña" class="login-input" placeholder="Contraseña" required> <br>
+                    <button type="submit">Entra</button>
+                </form>
+                <form class="register-form hidden" action="PHP/register.php" method="POST"> <!-- Agregado el atributo "action" -->
+                    <h1>Registrarse</h1>
+                    <input type="text" name="nombre" placeholder="Nombres Completos"> <br>
+                    <input type="text" name="email" placeholder="Email"> <br>
+                    <input type="text" name="usuario" placeholder="Usuario"> <br>
+                    <input type="password" name="contraseña" placeholder="Contraseña"> <br>
+                    <button type="submit">Registrarse</button>
+                </form>
             </div>
             <div class="caja-trasera">
                 <div class="login-area ">
@@ -42,4 +44,5 @@
     </main>
 </body>
 <script src="Assets/JS/login.js"></script>
+
 </html>

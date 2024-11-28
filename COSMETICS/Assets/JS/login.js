@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     
     login_area.style.opacity= "0";
-
+ 
     function registrarse() {
         loginForm.classList.add('hidden');
         registerForm.classList.remove('hidden');
