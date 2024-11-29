@@ -6,7 +6,7 @@ const UserProfile = () => {
         name: "María García",
         email: "maria.garcia@ejemplo.com",
         phone: "+34 612 345 678",
-        contraseña:123456789,
+        contraseña: "123456789",
         usuario: "maria.garcia",
         direccion: "Calle Principal 123",
         about: "Dueña orgullosa de Max, un labrador de 3 años. Cliente regular de la clínica veterinaria desde 2020.",
@@ -30,7 +30,7 @@ const UserProfile = () => {
             reader.onload = () => {
                 setNewImage(reader.result); // Convertimos la imagen a base64 para previsualizar
                 setProfile((prevProfile) => ({
-                    ...prevProfile,     
+                    ...prevProfile,
                     profileImage: reader.result,
                 }));
             };
@@ -40,6 +40,7 @@ const UserProfile = () => {
 
     const handleSave = () => {
         setIsEditing(false);
+        console.log("Datos actualizados:", profile);
         // Aquí puedes agregar lógica para enviar los datos actualizados a un backend.
     };
 
@@ -128,6 +129,42 @@ const UserProfile = () => {
                                     </div>
                                     <div className="row mb-3">
                                         <div className="col-sm-3">
+                                            <h6 className="mb-0">Usuario</h6>
+                                        </div>
+                                        <div className="col-sm-9 text-secondary">
+                                            {isEditing ? (
+                                                <input
+                                                    type="text"
+                                                    className="form-control"
+                                                    name="usuario"
+                                                    value={profile.usuario}
+                                                    onChange={handleInputChange}
+                                                />
+                                            ) : (
+                                                profile.usuario
+                                            )}
+                                        </div>
+                                    </div>
+                                    <div className="row mb-3">
+                                        <div className="col-sm-3">
+                                            <h6 className="mb-0">Contraseña</h6>
+                                        </div>
+                                        <div className="col-sm-9 text-secondary">
+                                            {isEditing ? (
+                                                <input
+                                                    type="password"
+                                                    className="form-control"
+                                                    name="contraseña"
+                                                    value={profile.contraseña}
+                                                    onChange={handleInputChange}
+                                                />
+                                            ) : (
+                                                "********"
+                                            )}
+                                        </div>
+                                    </div>
+                                    <div className="row mb-3">
+                                        <div className="col-sm-3">
                                             <h6 className="mb-0">Email</h6>
                                         </div>
                                         <div className="col-sm-9 text-secondary">
@@ -159,6 +196,24 @@ const UserProfile = () => {
                                                 />
                                             ) : (
                                                 profile.phone
+                                            )}
+                                        </div>
+                                    </div>
+                                    <div className="row mb-3">
+                                        <div className="col-sm-3">
+                                            <h6 className="mb-0">Dirección</h6>
+                                        </div>
+                                        <div className="col-sm-9 text-secondary">
+                                            {isEditing ? (
+                                                <input
+                                                    type="text"
+                                                    className="form-control"
+                                                    name="direccion"
+                                                    value={profile.direccion}
+                                                    onChange={handleInputChange}
+                                                />
+                                            ) : (
+                                                profile.direccion
                                             )}
                                         </div>
                                     </div>
