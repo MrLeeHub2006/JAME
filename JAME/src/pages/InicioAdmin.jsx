@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Navegacion from '../components/Navegacion'
 export default function InicioAdmin() {
   return (
     <div className="container-fluid vh-100">

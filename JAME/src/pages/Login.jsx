@@ -36,6 +36,7 @@ export default function Login() {
                     </form>
                     <div className="text-center mt-3">
                         <a href="#" className="text-decoration-none">¿Olvidaste tu contraseña?</a>
+                        <br />
                         <Link to="/register" className="text-decoration-none">¿No tienes cuenta? Registrate</Link>
                     </div>
                 </div>

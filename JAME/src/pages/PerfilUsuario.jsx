@@ -1,217 +1,208 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from "react";
 
 const UserProfile = () => {
-    const [user, setUser] = useState({
-        id: '',
-        nombre_completo: '',
-        usuario: '',
-        correo_electronico: '',
-        contraseña: '',
-        direccion: '',
-        telefono: '',
-        rol: 0
-    });
-    const [imageUrl, setImageUrl] = useState('');
     const [isEditing, setIsEditing] = useState(false);
-    const [file, setFile] = useState(null);
-
-    useEffect(() => {
-        // Fetch user data from API
-        const fetchUserData = async () => {
-            const response = await fetch('/api/user'); // Replace with your API endpoint
-            const data = await response.json();
-            setUser(data);
-            setImageUrl(`Assets/USUARIOS_FOTOS/${data.id}.jpg`);
-        };
-        fetchUserData();
-    }, []);
+    const [profile, setProfile] = useState({
+        name: "María García",
+        email: "maria.garcia@ejemplo.com",
+        phone: "+34 612 345 678",
+        contraseña:123456789,
+        usuario: "maria.garcia",
+        direccion: "Calle Principal 123",
+        about: "Dueña orgullosa de Max, un labrador de 3 años. Cliente regular de la clínica veterinaria desde 2020.",
+        profileImage: "/src/img/logovet.png",
+        memberSince: "Enero 2023",
+    });
+    const [newImage, setNewImage] = useState(null);
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
-        setUser(prevUser => ({ ...prevUser, [name]: value }));
+        setProfile((prevProfile) => ({
+            ...prevProfile,
+            [name]: value,
+        }));
     };
 
-    const handleFileChange = (e) => {
-        setFile(e.target.files[0]);
-    };
-
-    const handlePhotoSubmit = async (e) => {
-        e.preventDefault();
-        const formData = new FormData();
-        formData.append('imagen', file);
-        formData.append('id', user.id);
-
-        const response = await fetch('/api/update-photo', {
-            method: 'POST',
-            body: formData
-        });
-
-        if (response.ok) {
-            setImageUrl(`Assets/USUARIOS_FOTOS/${user.id}.jpg?${new Date().getTime()}`);
+    const handleImageUpload = (e) => {
+        const file = e.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = () => {
+                setNewImage(reader.result); // Convertimos la imagen a base64 para previsualizar
+                setProfile((prevProfile) => ({
+                    ...prevProfile,     
+                    profileImage: reader.result,
+                }));
+            };
+            reader.readAsDataURL(file);
         }
     };
 
-    const handleUserUpdate = async (e) => {
-        e.preventDefault();
-        const response = await fetch('/api/update-user', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(user)
-        });
-
-        if (response.ok) {
-            setIsEditing(false);
-        }
-    };
-
-    const handleLogout = async () => {
-        await fetch('/api/logout', { method: 'POST' });
-        // Redirect to login page or home page
+    const handleSave = () => {
+        setIsEditing(false);
+        // Aquí puedes agregar lógica para enviar los datos actualizados a un backend.
     };
 
     return (
-        <>
+        <div>
             <div className="bg-primary text-dark py-2 text-center bg-info">
                 <p className="mb-0">La mejor opción para el cuidado de tu mascota</p>
             </div>
 
-            {/* Header */}
             <header className="bg-white py-3 border-bottom">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-md-4 d-flex align-items-center">
-                            <img src="/src/img/logovet.png" alt="Logo Veterinaria" className=" w-25 rounded-circle me-5" />
+                            <img
+                                src="/src/img/logovet.png"
+                                alt="Logo Veterinaria"
+                                className="w-25 rounded-circle me-5"
+                            />
                         </div>
                         <div className="col-md-4 text-center">
                             <h1>Veterinaria Ciudad Canina</h1>
                         </div>
-                        <div className="col-md-2 text-end">
-                            <i class="bi bi-person"></i>
-                            <a href="#" className="text-decoration-none text-secondary me-3">INGRESAR</a>
-                        </div>
                     </div>
                 </div>
             </header>
-            <main>
-                <div className="contenedor">
-                    <div className="section-foto-usuario">
-                        <h1 className="title-div">FOTO USUARIO</h1>
-                        <form onSubmit={handlePhotoSubmit} style={{ display: 'flex', flexDirection: 'column' }}>
-                            <div
-                                className="foto-usuario"
-                                style={{ backgroundImage: `url(${imageUrl})`, backgroundSize: '100% 100%' }}
-                            />
-                            <input type="file" onChange={handleFileChange} required />
-                            <button type="submit" className="btn-foto">Cambiar foto</button>
-                        </form>
-                    </div>
-                    <div className="informacion-usuario">
-                        <h1 className="title-div">INFORMACIÓN USUARIO</h1>
-                        <form onSubmit={handleUserUpdate}>
-                            <div className="form-item">
-                                <p>Nombre:</p>
-                                <input
-                                    className="input-item"
-                                    name="nombre_completo"
-                                    type="text"
-                                    value={user.nombre_completo}
-                                    onChange={handleInputChange}
-                                    readOnly={!isEditing}
-                                    maxLength={50}
-                                    required
-                                />
-                            </div>
-                            <div className="form-item">
-                                <p>Usuario:</p>
-                                <input
-                                    className="input-item"
-                                    name="usuario"
-                                    type="text"
-                                    value={user.usuario}
-                                    onChange={handleInputChange}
-                                    readOnly={!isEditing}
-                                    maxLength={20}
-                                    required
-                                />
-                            </div>
-                            <div className="form-item">
-                                <p>Correo:</p>
-                                <input
-                                    className="input-item"
-                                    name="correo_electronico"
-                                    type="text"
-                                    value={user.correo_electronico}
-                                    onChange={handleInputChange}
-                                    readOnly={!isEditing}
-                                    maxLength={70}
-                                    required
-                                />
-                            </div>
-                            <div className="form-item">
-                                <p>Contraseña:</p>
-                                <input
-                                    className="input-item"
-                                    name="contraseña"
-                                    type="text"
-                                    value={user.contraseña}
-                                    onChange={handleInputChange}
-                                    readOnly={!isEditing}
-                                    maxLength={70}
-                                    required
-                                />
-                            </div>
-                            <div className="form-item">
-                                <p>Dirección:</p>
-                                <input
-                                    className="input-item"
-                                    name="direccion"
-                                    type="text"
-                                    value={user.direccion}
-                                    onChange={handleInputChange}
-                                    readOnly={!isEditing}
-                                    maxLength={30}
-                                />
-                            </div>
-                            <div className="form-item">
-                                <p>Teléfono:</p>
-                                <input
-                                    className="input-item"
-                                    name="telefono"
-                                    type="number"
-                                    value={user.telefono}
-                                    onChange={handleInputChange}
-                                    readOnly={!isEditing}
-                                    maxLength={10}
-                                />
-                            </div>
 
-                            <div className="botones-edit">
-                                {!isEditing && <button type="button" onClick={() => setIsEditing(true)}>EDITAR</button>}
-                                {isEditing && (
-                                    <>
-                                        <button type="button" onClick={() => setIsEditing(false)}>CANCELAR</button>
-                                        <button type="submit">ACTUALIZAR</button>
-                                    </>
-                                )}
+            <main>
+                <div className="container mt-4">
+                    <div className="row">
+                        <div className="col-md-8 mb-4">
+                            <div className="card">
+                                <div className="card-header">
+                                    <h5 className="card-title mb-0">Detalles del Perfil</h5>
+                                    <button
+                                        className="btn btn-primary btn-sm float-end"
+                                        onClick={() => setIsEditing(!isEditing)}
+                                    >
+                                        {isEditing ? "Cancelar" : "Editar"}
+                                    </button>
+                                </div>
+                                <div className="card-body">
+                                    <div className="text-center mb-4">
+                                        <img
+                                            src={profile.profileImage}
+                                            className="rounded-circle mb-3"
+                                            alt="Foto de perfil"
+                                            width="150"
+                                            height="150"
+                                        />
+                                        {isEditing && (
+                                            <div>
+                                                <input
+                                                    type="file"
+                                                    accept="image/*"
+                                                    onChange={handleImageUpload}
+                                                />
+                                            </div>
+                                        )}
+                                    </div>
+                                    <hr />
+                                    <div className="row mb-3">
+                                        <div className="col-sm-3">
+                                            <h6 className="mb-0">Usuario desde</h6>
+                                        </div>
+                                        <div className="col-sm-9 text-secondary">
+                                            {profile.memberSince}
+                                        </div>
+                                    </div>
+                                    <div className="row mb-3">
+                                        <div className="col-sm-3">
+                                            <h6 className="mb-0">Nombre</h6>
+                                        </div>
+                                        <div className="col-sm-9 text-secondary">
+                                            {isEditing ? (
+                                                <input
+                                                    type="text"
+                                                    className="form-control"
+                                                    name="name"
+                                                    value={profile.name}
+                                                    onChange={handleInputChange}
+                                                />
+                                            ) : (
+                                                profile.name
+                                            )}
+                                        </div>
+                                    </div>
+                                    <div className="row mb-3">
+                                        <div className="col-sm-3">
+                                            <h6 className="mb-0">Email</h6>
+                                        </div>
+                                        <div className="col-sm-9 text-secondary">
+                                            {isEditing ? (
+                                                <input
+                                                    type="email"
+                                                    className="form-control"
+                                                    name="email"
+                                                    value={profile.email}
+                                                    onChange={handleInputChange}
+                                                />
+                                            ) : (
+                                                profile.email
+                                            )}
+                                        </div>
+                                    </div>
+                                    <div className="row mb-3">
+                                        <div className="col-sm-3">
+                                            <h6 className="mb-0">Teléfono</h6>
+                                        </div>
+                                        <div className="col-sm-9 text-secondary">
+                                            {isEditing ? (
+                                                <input
+                                                    type="text"
+                                                    className="form-control"
+                                                    name="phone"
+                                                    value={profile.phone}
+                                                    onChange={handleInputChange}
+                                                />
+                                            ) : (
+                                                profile.phone
+                                            )}
+                                        </div>
+                                    </div>
+                                    <div className="row mb-3">
+                                        <div className="col-sm-3">
+                                            <h6 className="mb-0">Sobre mí</h6>
+                                        </div>
+                                        <div className="col-sm-9 text-secondary">
+                                            {isEditing ? (
+                                                <textarea
+                                                    className="form-control"
+                                                    name="about"
+                                                    rows="3"
+                                                    value={profile.about}
+                                                    onChange={handleInputChange}
+                                                />
+                                            ) : (
+                                                profile.about
+                                            )}
+                                        </div>
+                                    </div>
+                                    {isEditing && (
+                                        <button className="btn btn-success" onClick={handleSave}>
+                                            Guardar Cambios
+                                        </button>
+                                    )}
+                                </div>
                             </div>
-                        </form>
-                        <div style={{ display: 'flex' }}>
-                            <button onClick={handleLogout}>SALIR DE LA CUENTA</button>
-                            {user.rol === 1 && (
-                                <Link to="/st-usuarios">
-                                    <button>EDITAR USUARIOS</button>
-                                </Link>
-                            )}
+                        </div>
+                        <div className="col-md-4 mb-4">
+                            <div className="card">
+                                <div className="card-header">
+                                    <h5 className="card-title mb-0">Mis Mascotas</h5>
+                                </div>
+                                <div className="card-body">
+                                    <p className="text-muted">No hay mascotas registradas todavía.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </main>
-        </>
+        </div>
     );
 };
 
 export default UserProfile;
-

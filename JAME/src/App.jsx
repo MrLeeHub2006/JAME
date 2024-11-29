@@ -15,7 +15,7 @@ function App() {
         <Route path="/administrador/" element={<InicioAdmin />} />
         <Route path="/register/" element={<Register />} />
         <Route path="/example" element={<Example />} />
-        <Route path="/perfilusuario" element={<PerfilUsuario/>}/>
+        <Route path="/perfil" element={<PerfilUsuario/>}/>
       </Routes>
     </BrowserRouter>
   )

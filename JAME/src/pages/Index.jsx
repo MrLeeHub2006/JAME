@@ -182,6 +182,7 @@ export default function Index() {
                     <div className="text-center mt-4">
                         <a href=""><button className="btn btn-light bg-primary text-white">mostrar más</button></a>
                     </div>
+                    
                 </div>
             </section>
 
