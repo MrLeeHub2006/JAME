@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Index() {
     const [seccionActiva, setSeccionActiva] = useState("consulta");
@@ -52,18 +53,21 @@ export default function Index() {
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-md-4 d-flex align-items-center">
-                            <img src="https://via.placeholder.com/80" alt="Logo Veterinaria" className="rounded-circle me-5" />
+                            <img src="/src/img/logovet.png" alt="Logo Veterinaria" className=" w-25 rounded-circle me-5" />
                             <div className="input-group">
                                 <input type="text" className="form-control" placeholder="Buscar productos..." />
                                 <button className="btn btn-outline-secondary" type="button"><i className="fas fa-search"></i></button>
                             </div>
-                        </div>    
+                        </div>
                         <div className="col-md-5 text-center">
                             <h1>Veterinaria Ciudad Canina</h1>
-                        </div>               
+                        </div>
                         <div className="col-md-2 text-end">
+                            <i class="bi bi-person"></i>
                             <a href="#" className="text-decoration-none text-secondary me-3">INGRESAR</a>
+                            
                             <a href="#" className="text-decoration-none text-secondary">CARRITO</a>
+                            <i class="bi bi-cart4"></i>
                         </div>
                     </div>
                 </div>
@@ -75,80 +79,123 @@ export default function Index() {
                             <li className="nav-item "><a href="#" className="nav-link text-dark">Servicios</a></li>
                             <li className="nav-item "><a href="#" className="nav-link text-dark">Contáctanos</a></li>
                             <li className="nav-item "><a href="#" className="nav-link text-dark">Acerca de nosotros</a></li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <li className="nav-item dropdown">
+                                <a className="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Dropdown link
                                 </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <ul className="dropdown-menu">
+                                    <li><a className="dropdown-item" href="#">Action</a></li>
+                                    <li><a className="dropdown-item" href="#">Another action</a></li>
+                                    <li><a className="dropdown-item" href="#">Something else here</a></li>
                                 </ul>
                             </li>
                         </ul>
                     </nav>
                 </div>
             </header>
-
+            {/* carousel */}
+            <div id="carouselExampleIndicators" className="carousel slide position-relative" data-bs-ride="carousel">
+                <div className="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div className="carousel-inner">
+                    <div className="carousel-item active">
+                        <img src="/src/img/Banner1.png" className="d-block w-100" alt="..."/>
+                    </div>
+                    <div className="carousel-item">
+                        <img src="/src/img/Banner-makeup.png" className="d-block w-100" alt="..."/>
+                    </div>
+                    <div className="carousel-item">
+                        <img src="/src/img/Banner1.png" className="d-block w-100" alt="..."/>
+                    </div>
+                </div>
+                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span className="visually-hidden">Previous</span>
+                </button>
+                <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span className="visually-hidden">Next</span>
+                </button>
+                <div className="position-absolute top-50 end-0 translate-right  py-0 px-5">
+                    <h2>Bienvenido a Veterinaria</h2>
+                    <h2>Ciudad Canina</h2>
+                    <p>Descubre la mejor gama de cuidado y servicios para la mascota</p>
+                    <a href="Index.jsx#nosotros"><button className="btn-introduction">Conocer más</button></a>
+                </div>
+            </div>
             {/* Sección de Productos Nuevos */}
             <section className="bg-light-blue py-5">
                 <div className="container">
-                    <h2 className="text-white text-center mb-4">Productos Nuevos</h2>
+                    <h2 className="text-dark text-center mb-4">Productos Nuevos</h2>
                     <div className="row">
                         <div className="col-6 col-md-4 col-lg-2 mb-4">
                             <div className="card">
-                                <img src="https://via.placeholder.com/150" className="card-img-top" alt="Producto 1" />
+                                <img src="https://purina.com.ec/sites/default/files/styles/webp/public/2024-08/Dog%20Chow%20Selecci%C3%B3n%20de%20Prote%C3%ADnas%20Cordero.png.webp?itok=XlX7_b7I" className="card-img-top" alt="Producto 1" />
                                 <div className="card-body text-center">
+                                    <h6>Comida para perros</h6>
+                                    <p></p>
                                     <button className="btn btn-primary">Comprar ahora</button>
                                 </div>
                             </div>
                         </div>
                         <div className="col-6 col-md-4 col-lg-2 mb-4">
                             <div className="card">
-                                <img src="https://via.placeholder.com/150" className="card-img-top" alt="Producto 2" />
+                                <img src="https://purina.com.ec/sites/default/files/styles/webp/public/2024-08/Dog%20Chow%20Selecci%C3%B3n%20de%20Prote%C3%ADnas%20Cordero.png.webp?itok=XlX7_b7I" className="card-img-top" alt="Producto 2" />
                                 <div className="card-body text-center">
+                                    <h6>Comida para perros</h6>
                                     <button className="btn btn-primary">Comprar ahora</button>
                                 </div>
                             </div>
                         </div>
                         <div className="col-6 col-md-4 col-lg-2 mb-4">
                             <div className="card">
-                                <img src="https://via.placeholder.com/150" className="card-img-top" alt="Producto 3" />
+                                <img src="https://purina.com.ec/sites/default/files/styles/webp/public/2024-08/Dog%20Chow%20Selecci%C3%B3n%20de%20Prote%C3%ADnas%20Cordero.png.webp?itok=XlX7_b7I" className="card-img-top" alt="Producto 3" />
                                 <div className="card-body text-center">
+                                    <h6>Comida para perros</h6>
                                     <button className="btn btn-primary">Comprar ahora</button>
                                 </div>
                             </div>
                         </div>
                         <div className="col-6 col-md-4 col-lg-2 mb-4">
                             <div className="card">
-                                <img src="https://via.placeholder.com/150" className="card-img-top" alt="Producto 4" />
+                                <img src="https://purina.com.ec/sites/default/files/styles/webp/public/2024-08/Dog%20Chow%20Selecci%C3%B3n%20de%20Prote%C3%ADnas%20Cordero.png.webp?itok=XlX7_b7I" className="card-img-top" alt="Producto 4" />
                                 <div className="card-body text-center">
+                                    <h6>Comida para perros</h6>
+
                                     <button className="btn btn-primary">Comprar ahora</button>
                                 </div>
                             </div>
                         </div>
                         <div className="col-6 col-md-4 col-lg-2 mb-4">
                             <div className="card">
-                                <img src="https://via.placeholder.com/150" className="card-img-top" alt="Producto 5" />
+                                <img src="https://purina.com.ec/sites/default/files/styles/webp/public/2024-08/Dog%20Chow%20Selecci%C3%B3n%20de%20Prote%C3%ADnas%20Cordero.png.webp?itok=XlX7_b7I" className="card-img-top" alt="Producto 5" />
                                 <div className="card-body text-center">
+                                    <h6>Comida para perros</h6>
                                     <button className="btn btn-primary">Comprar ahora</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="text-center mt-4">
-                        <button className="btn btn-light">mostrar más</button>
+                        <a href=""><button className="btn btn-light bg-primary text-white">mostrar más</button></a>
                     </div>
                 </div>
             </section>
 
             {/* Sección de Servicios */}
-            <section className="py-5 bg-light">
-                <div className="container bg-info-emphasis">
-                    <div className="text-center mb-5">
-                        <p className="lead bg-info-emphasis">
-                            Nuestra clínica está conformada por profesionales altamente capacitados, con amplia experiencia en atención veterinaria y un profundo amor por los animales. Cada uno de nuestros servicios ha sido cuidadosamente diseñado para brindar atención médica de alta calidad, considerando las necesidades individuales de cada uno de nuestros pacientes.
-                        </p>
+            <section className="py-5 bg-light" id="nosotros">
+                <div className=" container text-center mb-5 w-100 shadow p-5 rounded-5">
+                    <h3>NOSOTROS</h3>
+                    <br />
+                    <p className="lead bg-info-emphasis">
+                        Nuestra clínica está conformada por profesionales altamente capacitados, con amplia experiencia en atención veterinaria y un profundo amor por los animales. Cada uno de nuestros servicios ha sido cuidadosamente diseñado para brindar atención médica de alta calidad, considerando las necesidades individuales de cada uno de nuestros pacientes.
+                    </p>
+                </div>
+                <div className="container shadow p-5 rounded-5 ">
+                     <div>
                         <div className="mt-4">
                             <button className="btn btn-primary me-2 mb-2" onClick={() => setSeccionActiva("consulta")}>Consulta médica</button>
                             <button className="btn btn-primary me-2 mb-2" onClick={() => setSeccionActiva("urgencias")}>Servicio de urgencias</button>
@@ -158,7 +205,7 @@ export default function Index() {
                     <div className="row align-items-center">
                         <div className="col-md-6">{renderContenido()}</div>
                         <div className="col-md-6 text-center">
-                            <img src="https://via.placeholder.com/300" alt="Veterinario" className="img-fluid rounded" />
+                            <img src="https://www.shutterstock.com/image-photo/happy-male-vet-doctor-uniform-260nw-2485692303.jpg" alt="Veterinario" className="img-fluid rounded-5" />
                         </div>
                     </div>
                 </div>
@@ -186,6 +233,15 @@ export default function Index() {
                         <div className="col-md-6">
                             <h3 className="mb-4">INFORMACIÓN DE LA EMPRESA</h3>
                             <p>+57 321 234567</p>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.113582607661!2d-74.06409622404315!3d4.75029769522493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f85a6923946cd%3A0xaa100ebe70e38f1c!2sCIUDAD%20CANINA%20VETERINARIA!5e0!3m2!1ses!2sco!4v1732890164662!5m2!1ses!2sco"
+                                width="600"
+                                height="300"
+                                style={{ border: 0 }}
+                                allowFullScreen=""
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                            ></iframe>
                             <div>
                                 <a href="#" className="text-decoration-none me-3"><i className="fab fa-facebook"></i></a>
                                 <a href="#" className="text-decoration-none me-3"><i className="fab fa-whatsapp"></i></a>

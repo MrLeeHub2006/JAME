@@ -4,6 +4,7 @@ import InicioAdmin from "./pages/InicioAdmin";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Example from "./pages/Example"
+import PerfilUsuario from "./pages/PerfilUsuario";
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         <Route path="/administrador/" element={<InicioAdmin />} />
         <Route path="/register/" element={<Register />} />
         <Route path="/example" element={<Example />} />
-
+        <Route path="/perfilusuario" element={<PerfilUsuario/>}/>
       </Routes>
     </BrowserRouter>
   )
