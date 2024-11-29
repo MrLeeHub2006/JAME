@@ -1,12 +1,13 @@
 import React from 'react'
+import Footer from '../components/Footer'
 
 export default function Register() {
   return (
     <div className="vh-100 d-flex justify-content-center align-items-center " style={{
       backgroundImage: `url("https://hoylecohen.com/wp-content/uploads/login-page-bg.jpg")`
-    }}>   
-    <div class="w-50 p-5">
-      <div class="card shadow p-5 rounded-5">
+    }}>
+      <div class="w-50 p-5">
+        <div class="card shadow p-5 rounded-5">
           <div class=" text-dark text-center">
             <i className="display-2 fa fa-paw" aria-hidden="true"></i>
 
@@ -21,24 +22,24 @@ export default function Register() {
               <div class="row mb-3">
                 <div class="col-md-6">
                   <label for="nombrePropietario" class="form-label">Nombre Completo</label>
-                  <input type="text" id="nombrePropietario" class="form-control" placeholder="Nombre del cliente" required/>
+                  <input type="text" id="nombrePropietario" class="form-control" placeholder="Nombre del cliente" required />
                 </div>
                 <div class="col-md-6">
                   <label for="emailPropietario" class="form-label">Correo Electrónico</label>
-                  <input type="email" id="emailPropietario" class="form-control" placeholder="Correo electrónico" required/>
+                  <input type="email" id="emailPropietario" class="form-control" placeholder="Correo electrónico" required />
                 </div>
               </div>
               <div class="row mb-3">
                 <div class="col-md-6">
                   <label for="Usuario" class="form-label">Usuario</label>
-                  <input type="tel" id="Usuario" class="form-control" placeholder="Usuario" required/>
+                  <input type="tel" id="Usuario" class="form-control" placeholder="Usuario" required />
                 </div>
                 <div class="col-md-6">
                   <label for="password" class="form-label">Contraseña</label>
-                  <input type="text" id="password" class="form-control" placeholder="Contraseña" required/>
+                  <input type="text" id="password" class="form-control" placeholder="Contraseña" required />
                 </div>
               </div>
-{/*              {/* <!-- Botón de registro --> */}
+              {/*              {/* <!-- Botón de registro --> */}
               <div class="text-center">
                 <button type="submit" class="btn btn-success w-100">Registrarse</button>
               </div>
@@ -46,6 +47,7 @@ export default function Register() {
           </div>
         </div>
       </div>
+<Footer/>
     </div>
 
 

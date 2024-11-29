@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Footer from "../components/Footer";
 
 const UserProfile = () => {
     const [isEditing, setIsEditing] = useState(false);
@@ -256,7 +257,9 @@ const UserProfile = () => {
                     </div>
                 </div>
             </main>
+            <Footer />
         </div>
+        
     );
 };
 

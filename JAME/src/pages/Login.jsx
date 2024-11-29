@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
-
+import Footer from "../components/Footer"
 
 export default function Login() {
 
@@ -19,16 +19,16 @@ export default function Login() {
                     </div>
                     <form>
                         <div className="mb-3">
-                            <label for="email" className="form-label">Correo Electrónico</label>
+                            <label htmlFor="email" className="form-label">Correo Electrónico</label>
                             <input type="email" className="form-control" id="email" placeholder="nombre@ejemplo.com" required/>
                         </div>
                         <div className="mb-3">
-                            <label for="password" className="form-label">Contraseña</label>
+                            <label htmlFor="password" className="form-label">Contraseña</label>
                             <input type="password" className="form-control" id="password" placeholder="Contraseña" required/>
                         </div>
                         <div className="mb-3 form-check">
                             <input type="checkbox" className="form-check-input" id="remember"/>
-                            <label className="form-check-label" for="remember">Recordarme</label>
+                            <label className="form-check-label" htmlFor="remember">Recordarme</label>
                         </div>
                         <div className="d-grid">
                             <button type="submit" className="btn btn-primary">Iniciar Sesión</button>
@@ -42,6 +42,8 @@ export default function Login() {
                 </div>
             </div>
         </div>
+        <Footer/>
+        
 </div>
   )
 }

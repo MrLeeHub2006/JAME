@@ -1,5 +1,6 @@
 import React from 'react'
 import Navegacion from '../components/Navegacion'
+import Footer from '../components/Footer'
 export default function InicioAdmin() {
   return (
     <div className="container-fluid vh-100">
@@ -99,6 +100,8 @@ export default function InicioAdmin() {
             </div>
         </div>
     </div>
+    <Footer/>
+    
 </div>
   )
 }
