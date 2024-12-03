@@ -7,7 +7,7 @@ const ProductView = () => {
             {/* Navbar personal */}
             <Navegacion />
             <div className="container my-4">
-                <div className="row">
+                <div className="row">   
                     {/* Columna de imágenes (izquierda) */}
                     <div className="col-md-8">
                         {/* Carrusel de imágenes */}
@@ -15,29 +15,29 @@ const ProductView = () => {
                             <div className="carousel-inner">
                                 <div className="carousel-item active">
                                     <img
-                                        src="imagen1.jpg"
-                                        className="d-block w-100"
+                                        src="src/img/Royal.jpg"
+                                        className="d-block w-75"
                                         alt="Imagen grande 1"
                                     />
                                 </div>
                                 <div className="carousel-item">
                                     <img
-                                        src="imagen2.jpg"
-                                        className="d-block w-100"
+                                        src="src/img/Royal2.png"
+                                        className="d-block w-75"
                                         alt="Imagen grande 2"
                                     />
-                                </div>
+                                </div>  
                                 <div className="carousel-item">
                                     <img
-                                        src="imagen3.jpg"
-                                        className="d-block w-100"
+                                        src="src/img/Royal.jpg"
+                                        className="d-block w-75 "
                                         alt="Imagen grande 3"
                                     />
                                 </div>
                                 <div className="carousel-item">
                                     <img
-                                        src="imagen4.jpg"
-                                        className="d-block w-100"
+                                        src="src/img/Royal2.png"
+                                        className="d-block w-75"
                                         alt="Imagen grande 4"
                                     />
                                 </div>
@@ -71,31 +71,31 @@ const ProductView = () => {
                         </div>
 
                         {/* Imágenes en miniatura */}
-                        <div className="d-flex mt-3">
+                        <div className="d-flex" style={{ height: "200px", width: "100%" }}>
                             <img
-                                src="imagen1.jpg"
+                                src="src/img/Royal.jpg"
                                 className="img-thumbnail me-2"
                                 alt="Imagen pequeña 1"
                                 data-bs-target="#carouselExample"
                                 data-bs-slide-to="0"
                             />
                             <img
-                                src="imagen2.jpg"
+                                src="src/img/Royal2.png"
                                 className="img-thumbnail me-2"
                                 alt="Imagen pequeña 2"
                                 data-bs-target="#carouselExample"
                                 data-bs-slide-to="1"
                             />
                             <img
-                                src="imagen3.jpg"
+                                src="src/img/Royal.jpg"
                                 className="img-thumbnail me-2"
                                 alt="Imagen pequeña 3"
                                 data-bs-target="#carouselExample"
                                 data-bs-slide-to="2"
                             />
                             <img
-                                src="imagen4.jpg"
-                                className="img-thumbnail me-2"
+                                src="src/img/Royal2.png"
+                                className="img-thumbnail me-2 w-25"
                                 alt="Imagen pequeña 4"
                                 data-bs-target="#carouselExample"
                                 data-bs-slide-to="3"
