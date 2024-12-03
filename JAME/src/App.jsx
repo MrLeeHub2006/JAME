@@ -6,6 +6,7 @@ import Register from "./pages/Register";
 import Example from "./pages/Example"
 import PerfilUsuario from "./pages/PerfilUsuario";
 import Productos from "./pages/Productos";
+import Producto from "./pages/Producto"
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/example" element={<Example />} />
         <Route path="/perfil" element={<PerfilUsuario/>}/>
         <Route path="/productos" element={<Productos/>}/>
+        <Route path="/producto" element={<Producto/>}/>
       </Routes>
     </BrowserRouter>
   )
