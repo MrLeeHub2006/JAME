@@ -7,6 +7,7 @@ import Example from "./pages/Example"
 import PerfilUsuario from "./pages/PerfilUsuario";
 import Productos from "./pages/Productos";
 import Producto from "./pages/Producto"
+import CarritoCompras from "./pages/CarritoCompras";
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
         <Route path="/perfil" element={<PerfilUsuario/>}/>
         <Route path="/productos" element={<Productos/>}/>
         <Route path="/producto" element={<Producto/>}/>
+        <Route path="/carrito" element={<CarritoCompras/>}/>
+
       </Routes>
     </BrowserRouter>
   )
