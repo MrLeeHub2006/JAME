@@ -44,10 +44,7 @@ export default function Index() {
 
     return (
         <div>
-            {/* Banner superior */}
-            <div className="bg-primary text-dark py-2 text-center bg-info">
-                <p className="mb-0">La mejor opción para el cuidado de tu mascota</p>
-            </div>
+        
 
             {/* Header */}
             <Navegacion/>
@@ -77,19 +74,19 @@ export default function Index() {
                     <span className="carousel-control-next-icon" aria-hidden="true"></span>
                     <span className="visually-hidden">Next</span>
                 </button>
-                <div className="position-absolute top-50 end-0 translate-right  py-0 px-5">
-                    <h2>Bienvenido a Veterinaria</h2>
+                <div className="position-absolute top-50 end-0 translate-middle  py-0 px-5">
+                    <h2 className="fs-1">Bienvenido a Veterinaria</h2>
                     <h2>Ciudad Canina</h2>
                     <p>Descubre la mejor gama de cuidado y servicios para la mascota</p>
-                    <a href="Index.jsx#nosotros"><button className="btn-introduction">Conocer más</button></a>
+                    <a href="Index.jsx#nosotros"><button className="btn btn-outline-primary">Conocer más</button></a>
                 </div>
             </div>
             {/* Sección de Productos Nuevos */}
             <section className="bg-light-blue py-5">
                 <div className="container">
                     <h2 className="text-dark text-center mb-4">Productos Nuevos</h2>
-                    <div className="row">
-                        <div className="col-6 col-md-4 col-lg-2 mb-4">
+                    <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5">
+                        <div className="col mb-4">
                             <div className="card">
                                 <img src="https://purina.com.ec/sites/default/files/styles/webp/public/2024-08/Dog%20Chow%20Selecci%C3%B3n%20de%20Prote%C3%ADnas%20Cordero.png.webp?itok=XlX7_b7I" className="card-img-top" alt="Producto 1" />
                                 <div className="card-body text-center">
@@ -99,7 +96,7 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-6 col-md-4 col-lg-2 mb-4">
+                        <div className="col mb-4">
                             <div className="card">
                                 <img src="https://purina.com.ec/sites/default/files/styles/webp/public/2024-08/Dog%20Chow%20Selecci%C3%B3n%20de%20Prote%C3%ADnas%20Cordero.png.webp?itok=XlX7_b7I" className="card-img-top" alt="Producto 2" />
                                 <div className="card-body text-center">
@@ -108,7 +105,7 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-6 col-md-4 col-lg-2 mb-4">
+                        <div className="col mb-4">
                             <div className="card">
                                 <img src="https://purina.com.ec/sites/default/files/styles/webp/public/2024-08/Dog%20Chow%20Selecci%C3%B3n%20de%20Prote%C3%ADnas%20Cordero.png.webp?itok=XlX7_b7I" className="card-img-top" alt="Producto 3" />
                                 <div className="card-body text-center">
@@ -117,7 +114,7 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-6 col-md-4 col-lg-2 mb-4">
+                        <div className="col mb-4">
                             <div className="card">
                                 <img src="https://purina.com.ec/sites/default/files/styles/webp/public/2024-08/Dog%20Chow%20Selecci%C3%B3n%20de%20Prote%C3%ADnas%20Cordero.png.webp?itok=XlX7_b7I" className="card-img-top" alt="Producto 4" />
                                 <div className="card-body text-center">
@@ -127,7 +124,7 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-6 col-md-4 col-lg-2 mb-4">
+                        <div className="col mb-4">
                             <div className="card">
                                 <img src="https://purina.com.ec/sites/default/files/styles/webp/public/2024-08/Dog%20Chow%20Selecci%C3%B3n%20de%20Prote%C3%ADnas%20Cordero.png.webp?itok=XlX7_b7I" className="card-img-top" alt="Producto 5" />
                                 <div className="card-body text-center">
