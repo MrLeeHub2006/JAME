@@ -143,6 +143,66 @@ export default function Productos() {
                           </div>
                       </div>
                     </div>
+                    <div className="col-md-4">
+                      <div className="card">
+                        <img src="producto1.jpg" className="card-img-top" alt="Producto 1" />
+                        <div className="card-body">
+                          <h6 className="card-title">Adultos Minis y Pequeños Pollo y Salmón</h6>
+                          <p className="card-text text-muted">Alimento balanceado completo para perros adultos minis y pequeños...</p>
+                          <a href="#" className="btn btn-link">Ver más</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-md-4">
+                      <div className="card">
+                        <img src="producto2.jpg" className="card-img-top" alt="Producto 2" />
+                        <div className="card-body">
+                          <h6 className="card-title">Purina One® Gatos Esterilizados</h6>
+                          <p className="card-text text-muted">Alimento balanceado, completo, húmedo, para gatos adultos y...</p>
+                          <a href="#" className="btn btn-link">Ver más</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-md-4">
+                      <div className="card">
+                        <img src="producto3.jpg" className="card-img-top" alt="Producto 3"/>
+                          <div className="card-body">
+                            <h6 className="card-title">Multi Proteínas Salmón, Atún</h6>
+                            <p className="card-text text-muted">Alimento balanceado, completo, húmedo, para gatos adultos y...</p>
+                            <a href="#" className="btn btn-link">Ver más</a>
+                          </div>
+                      </div>
+                    </div>
+                    <div className="col-md-4">
+                      <div className="card">
+                        <img src="producto1.jpg" className="card-img-top" alt="Producto 1" />
+                        <div className="card-body">
+                          <h6 className="card-title">Adultos Minis y Pequeños Pollo y Salmón</h6>
+                          <p className="card-text text-muted">Alimento balanceado completo para perros adultos minis y pequeños...</p>
+                          <a href="#" className="btn btn-link">Ver más</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-md-4">
+                      <div className="card">
+                        <img src="producto2.jpg" className="card-img-top" alt="Producto 2" />
+                        <div className="card-body">
+                          <h6 className="card-title">Purina One® Gatos Esterilizados</h6>
+                          <p className="card-text text-muted">Alimento balanceado, completo, húmedo, para gatos adultos y...</p>
+                          <a href="#" className="btn btn-link">Ver más</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-md-4">
+                      <div className="card">
+                        <img src="producto3.jpg" className="card-img-top" alt="Producto 3"/>
+                          <div className="card-body">
+                            <h6 className="card-title">Multi Proteínas Salmón, Atún</h6>
+                            <p className="card-text text-muted">Alimento balanceado, completo, húmedo, para gatos adultos y...</p>
+                            <a href="#" className="btn btn-link">Ver más</a>
+                          </div>
+                      </div>
+                    </div>
                   </div>
                 </section>
               </div>
