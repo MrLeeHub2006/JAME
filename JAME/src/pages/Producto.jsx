@@ -3,47 +3,13 @@ import Navegacion from "../components/Navegacion";
 
 const ProductView = () => {
     return (
-        <div >
+        <div>
             {/* Navbar personal */}
             <Navegacion />
             <div className="container my-4">
                 <div className="row">
-                    {/* Columna de imágenes pequeñas */}
-                    <div className="col-md-2">
-                        <div className="d-flex flex-column">
-                            <img
-                                src="imagen1.jpg"
-                                className="img-thumbnail mb-2"
-                                alt="Imagen pequeña 1"
-                                data-bs-target="#carouselExample"
-                                data-bs-slide-to="0"
-                            />
-                            <img
-                                src="imagen2.jpg"
-                                className="img-thumbnail mb-2"
-                                alt="Imagen pequeña 2"
-                                data-bs-target="#carouselExample"
-                                data-bs-slide-to="1"
-                            />
-                            <img
-                                src="imagen3.jpg"
-                                className="img-thumbnail mb-2"
-                                alt="Imagen pequeña 3"
-                                data-bs-target="#carouselExample"
-                                data-bs-slide-to="2"
-                            />
-                            <img
-                                src="imagen4.jpg"
-                                className="img-thumbnail mb-2"
-                                alt="Imagen pequeña 4"
-                                data-bs-target="#carouselExample"
-                                data-bs-slide-to="3"
-                            />
-                        </div>
-                    </div>
-
-                    {/* Columna de imagen grande y descripción */}
-                    <div className="col-md-10">
+                    {/* Columna de imágenes (izquierda) */}
+                    <div className="col-md-8">
                         {/* Carrusel de imágenes */}
                         <div id="carouselExample" className="carousel slide">
                             <div className="carousel-inner">
@@ -76,9 +42,69 @@ const ProductView = () => {
                                     />
                                 </div>
                             </div>
+
+                            {/* Controles del carrusel */}
+                            <button
+                                className="carousel-control-prev"
+                                type="button"
+                                data-bs-target="#carouselExample"
+                                data-bs-slide="prev"
+                            >
+                                <span
+                                    className="carousel-control-prev-icon"
+                                    aria-hidden="true"
+                                ></span>
+                                <span className="visually-hidden">Previous</span>
+                            </button>
+                            <button
+                                className="carousel-control-next"
+                                type="button"
+                                data-bs-target="#carouselExample"
+                                data-bs-slide="next"
+                            >
+                                <span
+                                    className="carousel-control-next-icon"
+                                    aria-hidden="true"
+                                ></span>
+                                <span className="visually-hidden">Next</span>
+                            </button>
                         </div>
 
-                        {/* Descripción del producto */}
+                        {/* Imágenes en miniatura */}
+                        <div className="d-flex mt-3">
+                            <img
+                                src="imagen1.jpg"
+                                className="img-thumbnail me-2"
+                                alt="Imagen pequeña 1"
+                                data-bs-target="#carouselExample"
+                                data-bs-slide-to="0"
+                            />
+                            <img
+                                src="imagen2.jpg"
+                                className="img-thumbnail me-2"
+                                alt="Imagen pequeña 2"
+                                data-bs-target="#carouselExample"
+                                data-bs-slide-to="1"
+                            />
+                            <img
+                                src="imagen3.jpg"
+                                className="img-thumbnail me-2"
+                                alt="Imagen pequeña 3"
+                                data-bs-target="#carouselExample"
+                                data-bs-slide-to="2"
+                            />
+                            <img
+                                src="imagen4.jpg"
+                                className="img-thumbnail me-2"
+                                alt="Imagen pequeña 4"
+                                data-bs-target="#carouselExample"
+                                data-bs-slide-to="3"
+                            />
+                        </div>
+                    </div>
+
+                    {/* Columna de descripción (derecha) */}
+                    <div className="col-md-4">
                         <div className="mt-4">
                             <h2>Purina® Dog Chow® Alta Proteína</h2>
                             <p>
