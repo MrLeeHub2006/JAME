@@ -8,6 +8,8 @@ import PerfilUsuario from "./pages/PerfilUsuario";
 import Productos from "./pages/Productos";
 import Producto from "./pages/Producto"
 import CarritoCompras from "./pages/CarritoCompras";
+import PasarelaPago from "./pages/PasarelaPago"
+import OlvidoContraseña from "./pages/OlvidoContraseña";
 
 function App() {
   return (
@@ -22,6 +24,9 @@ function App() {
         <Route path="/productos" element={<Productos/>}/>
         <Route path="/producto" element={<Producto/>}/>
         <Route path="/carrito" element={<CarritoCompras/>}/>
+        <Route path="/pago" element={<PasarelaPago />} />
+        <Route path="/olvidar" element={<OlvidoContraseña />} />
+
 
       </Routes>
     </BrowserRouter>
