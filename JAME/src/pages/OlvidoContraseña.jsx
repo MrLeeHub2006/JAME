@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
-import Server from "../js/Server"
+
 
 // Esta función genera un código aleatorio de 6 dígitos
 const generarCodigo = () => {
@@ -32,7 +32,7 @@ export default function OlvidoContraseña() {
             // Ejemplo de cómo hacerlo:
             const response = await fetch('/api/enviarCodigo', {
                 method: 'POST',
-                headers: {
+                headers: {  
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({ email, codigo }),

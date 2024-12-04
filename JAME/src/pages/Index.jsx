@@ -78,11 +78,11 @@ export default function Index() {
                     <h2 className="fs-1">Bienvenido a Veterinaria</h2>
                     <h2>Ciudad Canina</h2>
                     <p>Descubre la mejor gama de cuidado y servicios para la mascota</p>
-                    <a href="Index.jsx#nosotros"><button className="btn btn-outline-primary">Conocer más</button></a>
+                    <a href="#productos"><button className="btn btn-outline-primary">Conocer más</button></a>
                 </div>
             </div>
             {/* Sección de Productos Nuevos */}
-            <section className="bg-light-blue py-5">
+            <section className="bg-light-blue py-5" id="productos">
                 <div className="container">
                     <h2 className="text-dark text-center mb-4">Productos Nuevos</h2>
                     <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5">
@@ -150,8 +150,11 @@ export default function Index() {
                     <p className="lead bg-info-emphasis">
                         Nuestra clínica está conformada por profesionales altamente capacitados, con amplia experiencia en atención veterinaria y un profundo amor por los animales. Cada uno de nuestros servicios ha sido cuidadosamente diseñado para brindar atención médica de alta calidad, considerando las necesidades individuales de cada uno de nuestros pacientes.
                     </p>
+                    <a href=""><button className="btn btn-outline-primary">Conocer más</button></a>
+
                 </div>
-                <div className="container shadow p-5 rounded-5 ">
+                <div className="container shadow p-5 rounded-5" id="servicios">
+                <h3 className="text-center mb-5 text-dark">SERVICIOS DISPONIBLES</h3>
                      <div>
                         <div className="mt-4">
                             <button className="btn btn-primary me-2 mb-2" onClick={() => setSeccionActiva("consulta")}>Consulta médica</button>
@@ -169,7 +172,7 @@ export default function Index() {
             </section>
 
             {/* Sección de Contacto */}
-            <section className="py-5">
+            <section className="py-5" id="contacto">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6 mb-4 mb-md-0">
