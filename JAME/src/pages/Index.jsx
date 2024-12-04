@@ -47,7 +47,7 @@ export default function Index() {
         
 
             {/* Header */}
-            <Navegacion/>
+            <Navegacion />
             {/* carousel */}
             <div id="carouselExampleIndicators" className="carousel slide position-relative" data-bs-ride="carousel">
                 <div className="carousel-indicators">
@@ -57,13 +57,13 @@ export default function Index() {
                 </div>
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                        <img src="/src/img/Banner1.png" className="d-block w-100" alt="..."/>
-                    </div>
-                    <div className="carousel-item">
-                        <img src="/src/img/Banner-makeup.png" className="d-block w-100" alt="..."/>
+                        <img src="/src/img/Banner2.png" className="d-block w-100" alt="..."/>
                     </div>
                     <div className="carousel-item">
                         <img src="/src/img/Banner1.png" className="d-block w-100" alt="..."/>
+                    </div>
+                    <div className="carousel-item">
+                        <img src="/src/img/Banner3.png" className="d-block w-100" alt="..."/>
                     </div>
                 </div>
                 <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

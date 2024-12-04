@@ -25,7 +25,7 @@ function App() {
         <Route path="/producto" element={<Producto/>}/>
         <Route path="/carrito" element={<CarritoCompras/>}/>
         <Route path="/pago" element={<PasarelaPago />} />
-        <Route path="/olvidar" element={<OlvidoContraseña />} />
+        <Route path="/recuperar" element={<OlvidoContraseña />} />
 
 
       </Routes>

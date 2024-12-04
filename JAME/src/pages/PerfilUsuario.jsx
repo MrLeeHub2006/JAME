@@ -251,6 +251,7 @@ const UserProfile = () => {
                                 </div>
                                 <div className="card-body">
                                     <p className="text-muted">No hay mascotas registradas todavía.</p>
+                                    <button className="btn btn-primary">Agregar Mascota</button>
                                 </div>
                             </div>
                         </div>

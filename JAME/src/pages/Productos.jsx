@@ -7,12 +7,6 @@ export default function Productos() {
   return (
     <div>
 
-      {/* <!-- Encabezado --> */}
-
-        <div className="bg-primary text-dark py-2 text-center bg-info">
-          <p className="mb-0">La mejor opción para el cuidado de tu mascota</p>
-        </div>
-
         {/* Header */}
         <Navegacion />
         {/* <!-- Contenido principal --> */}
