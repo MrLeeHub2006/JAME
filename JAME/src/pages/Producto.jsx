@@ -1,5 +1,6 @@
 import React from "react";
 import Navegacion from "../components/Navegacion";
+import Footer from "../components/Footer";
 
 const ProductView = () => {
     return (
@@ -126,6 +127,7 @@ const ProductView = () => {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </div>
     );
 };

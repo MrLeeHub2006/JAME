@@ -10,6 +10,8 @@ import Producto from "./pages/Producto"
 import CarritoCompras from "./pages/CarritoCompras";
 import PasarelaPago from "./pages/PasarelaPago"
 import OlvidoContraseña from "./pages/OlvidoContraseña";
+import Mascota from "./pages/Mascota";
+
 
 function App() {
   return (
@@ -26,6 +28,7 @@ function App() {
         <Route path="/carrito" element={<CarritoCompras/>}/>
         <Route path="/pago" element={<PasarelaPago />} />
         <Route path="/recuperar" element={<OlvidoContraseña />} />
+        <Route path="/mascota" element={<Mascota/>} />
 
 
       </Routes>

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 
 const UserProfile = () => {
     const [isEditing, setIsEditing] = useState(false);
@@ -251,7 +252,7 @@ const UserProfile = () => {
                                 </div>
                                 <div className="card-body">
                                     <p className="text-muted">No hay mascotas registradas todavía.</p>
-                                    <button className="btn btn-primary">Agregar Mascota</button>
+                                    <Link to="/mascota" className="btn btn-primary">Agregar Mascota</Link>
                                 </div>
                             </div>
                         </div>
