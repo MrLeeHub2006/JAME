@@ -21,7 +21,7 @@ export default function Navegacion() {
                         <div className="col-md-5 text-center">
                             <h1>Veterinaria Ciudad Canina</h1>
                         </div>
-                        <div className="col-md-2 text-end">
+                        <div className="col-md-3 text-end">
                             <i class="bi bi-person"></i>
                             <Link to={"/login"} className="text-decoration-none text-secondary me-3">INGRESAR</Link>
 
@@ -43,9 +43,9 @@ export default function Navegacion() {
                                     Dropdown link
                                 </a>
                                 <ul className="dropdown-menu">
-                                    <li><a className="dropdown-item" href="#">Action</a></li>
-                                    <li><a className="dropdown-item" href="#">Another action</a></li>
-                                    <li><a className="dropdown-item" href="#">Something else here</a></li>
+                                    <li><a className="dropdown-item" href="#">Servicios</a></li>
+                                    <li><a className="dropdown-item" href="#">Agendamiento de Medicina</a></li>
+                                    <li><a className="dropdown-item" href="#">Agendamiento Grooming</a></li>
                                 </ul>
                             </li>
                         </ul>
