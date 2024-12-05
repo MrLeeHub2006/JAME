@@ -1,6 +1,5 @@
 import React from 'react'
-import Footer from '../components/Footer'
-
+import Footer from '../../components/Footer'
 export default function Register() {
   return (
     <div>
@@ -22,8 +21,8 @@ export default function Register() {
                 <h4 class="mb-3 text-center">Información del cliente</h4>
                 <div class="row mb-3">
                   <div class="col-md-6">
-                    <label for="nombrePropietario" class="form-label">Nombre Completo</label>
-                    <input type="text" id="nombrePropietario" class="form-control" placeholder="Nombre del cliente" required />
+                    <label for="nombrePropietario" class="form-label">Usuario</label>
+                    <input type="text" id="nombrePropietario" class="form-control" placeholder="Usuario" required />
                   </div>
                   <div class="col-md-6">
                     <label for="emailPropietario" class="form-label">Correo Electrónico</label>
@@ -32,12 +31,12 @@ export default function Register() {
                 </div>
                 <div class="row mb-3">
                   <div class="col-md-6">
-                    <label for="Usuario" class="form-label">Usuario</label>
-                    <input type="tel" id="Usuario" class="form-control" placeholder="Usuario" required />
+                    <label for="Usuario" class="form-label">Contraseña</label>
+                    <input type="tel" id="Usuario" class="form-control" placeholder="Contraseña" required />
                   </div>
                   <div class="col-md-6">
-                    <label for="password" class="form-label">Contraseña</label>
-                    <input type="text" id="password" class="form-control" placeholder="Contraseña" required />
+                    <label for="password" class="form-label">Confirmar Contraseña</label>
+                    <input type="text" id="password" class="form-control" placeholder="Confirmar Contraseña" required />
                   </div>
                 </div>
                 {/*              {/* <!-- Botón de registro --> */}

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Navegacion from "../components/Navegacion";
+import Footer from '../../components/Footer'
+import Navegacion from '../../components/Navegacion'
 
 export default function Index() {
     const [seccionActiva, setSeccionActiva] = useState("consulta");
@@ -213,9 +214,7 @@ export default function Index() {
             </section>
 
             {/* Footer */}
-            <footer className="bg-dark text-white py-3 text-center">
-                <p className="mb-0">©2024 Tu tienda para cuidar tu peludo. Todos los derechos reservados.</p>
-            </footer>
+           <Footer />
         </div>
     );
 }

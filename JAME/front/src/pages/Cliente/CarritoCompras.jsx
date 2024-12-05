@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Navegacion from '../components/Navegacion';
-import Footer from '../components/Footer'
+import Footer from '../../components/Footer'
+import Navegacion from '../../components/Navegacion'
 export default function CarritoCompras() {
     const [productos, setProductos] = useState([
         {

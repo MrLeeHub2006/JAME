@@ -1,6 +1,6 @@
 import React from 'react'
-import Footer from '../components/Footer'
-import Navegacion from '../components/Navegacion'
+import Footer from '../../components/Footer'
+import Navegacion from '../../components/Navegacion'
 
 export default function Servicios() {
   return (

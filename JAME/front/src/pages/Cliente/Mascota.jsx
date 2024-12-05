@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Navegacion from "../components/Navegacion";
-import Footer from "../components/Footer";
+import Navegacion from '../../components/Navegacion'
+import Footer from '../../components/Footer'
 
 function RegistrarMascota() {
     const [form, setForm] = useState({

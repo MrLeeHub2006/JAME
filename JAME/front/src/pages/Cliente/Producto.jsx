@@ -1,6 +1,6 @@
 import React from "react";
-import Navegacion from "../components/Navegacion";
-import Footer from "../components/Footer";
+import Footer from '../../components/Footer'
+import Navegacion from '../../components/Navegacion'
 
 const ProductView = () => {
     return (
