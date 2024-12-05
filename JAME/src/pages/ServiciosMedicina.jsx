@@ -25,7 +25,7 @@ export default function Servicios() {
                         />
                       </svg>
                     </div>
-                    <button className="btn btn-success w-100">Consulta</button>
+                    <button className="btn btn-success w-100">Agendar</button>
                   </div>
                 </div>
               </div>
