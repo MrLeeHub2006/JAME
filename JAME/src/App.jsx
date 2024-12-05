@@ -11,6 +11,7 @@ import CarritoCompras from "./pages/CarritoCompras";
 import PasarelaPago from "./pages/PasarelaPago"
 import OlvidoContraseña from "./pages/OlvidoContraseña";
 import Mascota from "./pages/Mascota";
+import ServiciosMedicina from "./pages/ServiciosMedicina";
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
         <Route path="/pago" element={<PasarelaPago />} />
         <Route path="/recuperar" element={<OlvidoContraseña />} />
         <Route path="/mascota" element={<Mascota/>} />
+        <Route path="/medicina" element={<ServiciosMedicina/>} />
 
 
       </Routes>
