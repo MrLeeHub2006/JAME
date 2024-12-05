@@ -18,7 +18,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="form group">
-                            <label for="">Nombre del Usuario</label> <b>*</b>
+                            <label for="">Usuario</label> <b>*</b>
                             <input type="text" value="{{old('name')}}" name="name" class="form-control" required>
                             @error('name')
                             <small style="color:red">{{$message}}</small>

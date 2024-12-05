@@ -9,7 +9,9 @@ Route::get('/', function () {
 
 Auth::routes();
 
+//ruta de salidas princioales del sistema
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::post('/logout', [App\Http\Controllers\Auth\LoginController::class, 'logout'])->name('logout');
 
 
 //ruta para el admin
@@ -41,4 +43,4 @@ Route::get('/admin/usuarios/{id}/confirm-delete', [App\Http\Controllers\UsuarioC
 Route::delete('/admin/usuarios/{id}', [App\Http\Controllers\UsuarioController::class, 'destroy'])->name(name:'admin.usuarios.destroy')
 ->middleware(middleware:'auth');
 
-Route::post('/logout', [App\Http\Controllers\Auth\LoginController::class, 'logout'])->name('logout');
+

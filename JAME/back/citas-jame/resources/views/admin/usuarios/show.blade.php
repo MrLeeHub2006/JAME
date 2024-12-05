@@ -17,7 +17,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="form group">
-                            <label for="">Nombre del Usuario</label>
+                            <label for="">Usuario</label>
                             <p>{{$usuario->name}}</p>
                         </div>
 

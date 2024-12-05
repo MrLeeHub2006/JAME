@@ -19,7 +19,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="form group">
-                            <label for="">Nombre del Usuario</label> <p>*</p>
+                            <label for="">Usuario</label> <p>*</p>
                             <input type="text" value="{{$usuario->name}}" name="name" class="form-control" required>
                             @error('name')
                             <small style="color:red">{{$message}}</small>
