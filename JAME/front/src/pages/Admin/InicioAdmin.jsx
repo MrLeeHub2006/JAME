@@ -1,12 +1,12 @@
 import React from 'react'
 import Footer from '../../components/Footer'
-import Navegacion from '../../components/Navegacion'
+import Navbar from '../../components/Navbar'
 
 export default function InicioAdmin() {
   return (
     <div className="container-fluid vh-100">
     {/* <!-- Header --> */}
-   <Navegacion/>
+   <Navbar/>
 
     <div className="row vh-100">
         {/* <!-- Sidebar --> */}
@@ -32,8 +32,7 @@ export default function InicioAdmin() {
 
         {/* <!-- Main Content --> */}
         <div className="col-10 bg-light p-4">
-            <h2 className="text-center mb-4">CLINICA VETERINARIA CIUDAD CANINA</h2>
-
+            
             <div className="row mb-5">
                 {/* <!-- Appointments Box --> */}
                 <div className="col-6">
@@ -82,13 +81,13 @@ export default function InicioAdmin() {
                 </div>
                 <div className="col-2">
                     <button className="btn btn-light border p-4">
-                        <i className="bi bi-cloud fs-3"></i>
+                        <i className="display-1 bi bi-cloud fs-3"></i>
                         <div className="mt-2">Cloud</div>
                     </button>
                 </div>
                 <div className="col-2">
                     <button className="btn btn-light border p-4">
-                        <i className="bi bi-paw fs-3"></i>
+                              <i className="display-6 fa fa-paw" aria-hidden="true"></i>
                         <div className="mt-2">Mascotas</div>
                     </button>
                 </div>

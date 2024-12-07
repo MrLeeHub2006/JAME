@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Cliente/Index";
-import InicioAdmin from "./pages/Cliente/InicioAdmin";
+import InicioAdmin from "./pages/Admin/InicioAdmin";
 import Login from "./pages/Cliente/Login";
 import Register from "./pages/Cliente/Register";
 import Example from "./pages/Cliente/Example"

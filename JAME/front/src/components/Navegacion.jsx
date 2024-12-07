@@ -49,7 +49,7 @@ export default function Navegacion() {
                                     Servicios
                                 </a>
                                 <ul className="dropdown-menu">
-                                    <li><a className="dropdown-item" href="#">Agendamiento de Medicina</a></li>
+                                    <li><Link to={"/medicina"} className="dropdown-item" href="#">Agendamiento de Medicina</Link></li>
                                     <li><a className="dropdown-item" href="#">Agendamiento Grooming</a></li>
                                 </ul>
                             </li>
