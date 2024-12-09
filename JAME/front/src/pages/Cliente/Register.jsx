@@ -1,5 +1,8 @@
 import React from 'react'
 import Footer from '../../components/Footer'
+import { useNavigate } from 'react-router-dom'
+import Swal from 'sweetalert2'
+
 export default function Register() {
   return (
     <div>
@@ -41,7 +44,19 @@ export default function Register() {
                 </div>
                 {/*              {/* <!-- Botón de registro --> */}
                 <div class="text-center">
-                  <button type="submit" class="btn btn-success w-100">Registrarse</button>
+                  <button type="submit" class="btn btn-success w-100" onClick={()=>{
+                    Swal.fire({
+                      position: "top-end",
+                      icon: "success",
+                      title: "Usuario Registrado Correctante",
+                      showConfirmButton: false,
+                      timer: 1500,
+                    }
+                    ).then(() => {
+                      window.location.href = "/login";
+                    });
+                    
+                  }}>Registrarse</button>
                 </div>
               </form>
             </div>

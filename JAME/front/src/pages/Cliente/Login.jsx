@@ -70,7 +70,7 @@ export default function Login() {
                                     <input onChange={handleChange} type="password" className="form-control" name="password" id="password" placeholder="Contraseña" required />
                                 </div>
                                 <div className="d-grid">
-                                    <button type="submit" className="btn btn-primary">Iniciar Sesión</button>
+                                    <button type="submit" className="btn btn-success">Iniciar Sesión</button>
                                 </div>
                             </form>
                             <div className="text-center mt-3">
