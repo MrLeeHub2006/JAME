@@ -1,6 +1,7 @@
 import React from 'react'
 import Footer from '../../components/Footer'
 import Navegacion from '../../components/Navegacion'
+import { Link } from 'react-router-dom'
 
 
 export default function Productos() {
@@ -61,91 +62,91 @@ export default function Productos() {
                 <div className="row g-4">
                   <div className="col-md-4">
                     <div className="card">
-                      <img src="producto1.jpg" className="card-img-top" alt="Producto 1" />
+                      <img src="src/img/Royal.jpg" className="card-img-top" alt="Producto 1" />
                       <div className="card-body">
                         <h6 className="card-title">Adultos Minis y Pequeños Pollo y Salmón</h6>
                         <p className="card-text text-muted">Alimento balanceado completo para perros adultos minis y pequeños...</p>
-                        <a href="#" className="btn btn-link">Ver más</a>
+                        <Link to="/producto" className="btn btn-link">Ver más</Link> 
                       </div>
                     </div>
                   </div>
                   <div className="col-md-4">
                     <div className="card">
-                      <img src="producto2.jpg" className="card-img-top" alt="Producto 2" />
+                      <img src="src/img/Royal.jpg" className="card-img-top" alt="Producto 2" />
                       <div className="card-body">
                         <h6 className="card-title">Purina One® Gatos Esterilizados</h6>
                         <p className="card-text text-muted">Alimento balanceado, completo, húmedo, para gatos adultos y...</p>
-                        <a href="#" className="btn btn-link">Ver más</a>
+                        <Link to="/producto" className="btn btn-link">Ver más</Link> 
                       </div>
                     </div>
                   </div>
                   <div className="col-md-4">
                     <div className="card">
-                      <img src="producto3.jpg" className="card-img-top" alt="Producto 3" />
+                      <img src="src/img/Royal.jpg" className="card-img-top" alt="Producto 3" />
                       <div className="card-body">
                         <h6 className="card-title">Multi Proteínas Salmón, Atún</h6>
                         <p className="card-text text-muted">Alimento balanceado, completo, húmedo, para gatos adultos y...</p>
-                        <a href="#" className="btn btn-link">Ver más</a>
+                        <Link to="/producto" className="btn btn-link">Ver más</Link> 
                       </div>
                     </div>
                   </div>
                   <div className="col-md-4">
                     <div className="card">
-                      <img src="producto1.jpg" className="card-img-top" alt="Producto 1" />
+                      <img src="src/img/Royal.jpg" className="card-img-top" alt="Producto 1" />
                       <div className="card-body">
                         <h6 className="card-title">Adultos Minis y Pequeños Pollo y Salmón</h6>
                         <p className="card-text text-muted">Alimento balanceado completo para perros adultos minis y pequeños...</p>
-                        <a href="#" className="btn btn-link">Ver más</a>
+                        <Link to="/producto" className="btn btn-link">Ver más</Link> 
                       </div>
                     </div>
                   </div>
                   <div className="col-md-4">
                     <div className="card">
-                      <img src="producto2.jpg" className="card-img-top" alt="Producto 2" />
+                      <img src="src/img/Royal.jpg" className="card-img-top" alt="Producto 2" />
                       <div className="card-body">
                         <h6 className="card-title">Purina One® Gatos Esterilizados</h6>
                         <p className="card-text text-muted">Alimento balanceado, completo, húmedo, para gatos adultos y...</p>
-                        <a href="#" className="btn btn-link">Ver más</a>
+                        <Link to="/producto" className="btn btn-link">Ver más</Link> 
                       </div>
                     </div>
                   </div>
                   <div className="col-md-4">
                     <div className="card">
-                      <img src="producto3.jpg" className="card-img-top" alt="Producto 3" />
+                      <img src="src/img/Royal.jpg" className="card-img-top" alt="Producto 3" />
                       <div className="card-body">
                         <h6 className="card-title">Multi Proteínas Salmón, Atún</h6>
                         <p className="card-text text-muted">Alimento balanceado, completo, húmedo, para gatos adultos y...</p>
-                        <a href="#" className="btn btn-link">Ver más</a>
+                        <Link to="/producto" className="btn btn-link">Ver más</Link> 
                       </div>
                     </div>
                   </div>
                   <div className="col-md-4">
                     <div className="card">
-                      <img src="producto1.jpg" className="card-img-top" alt="Producto 1" />
+                      <img src="src/img/Royal.jpg" className="card-img-top" alt="Producto 1" />
                       <div className="card-body">
                         <h6 className="card-title">Adultos Minis y Pequeños Pollo y Salmón</h6>
                         <p className="card-text text-muted">Alimento balanceado completo para perros adultos minis y pequeños...</p>
-                        <a href="#" className="btn btn-link">Ver más</a>
+                        <Link to="/producto" className="btn btn-link">Ver más</Link> 
                       </div>
                     </div>
                   </div>
                   <div className="col-md-4">
                     <div className="card">
-                      <img src="producto2.jpg" className="card-img-top" alt="Producto 2" />
+                      <img src="src/img/Royal.jpg" className="card-img-top" alt="Producto 2" />
                       <div className="card-body">
                         <h6 className="card-title">Purina One® Gatos Esterilizados</h6>
                         <p className="card-text text-muted">Alimento balanceado, completo, húmedo, para gatos adultos y...</p>
-                        <a href="#" className="btn btn-link">Ver más</a>
+                        <Link to="/producto" className="btn btn-link">Ver más</Link> 
                       </div>
                     </div>
                   </div>
                   <div className="col-md-4">
                     <div className="card">
-                      <img src="producto3.jpg" className="card-img-top" alt="Producto 3" />
+                      <img src="src/img/Royal.jpg" className="card-img-top" alt="Producto 3" />
                       <div className="card-body">
                         <h6 className="card-title">Multi Proteínas Salmón, Atún</h6>
                         <p className="card-text text-muted">Alimento balanceado, completo, húmedo, para gatos adultos y...</p>
-                        <a href="#" className="btn btn-link">Ver más</a>
+                        <Link to="/producto" className="btn btn-link">Ver más</Link> 
                       </div>
                     </div>
                   </div>
