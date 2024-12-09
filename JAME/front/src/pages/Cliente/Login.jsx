@@ -32,7 +32,7 @@ export default function Login() {
                                     <label className="form-check-label" htmlFor="remember">Recordarme</label>
                                 </div>
                                 <div className="d-grid">
-                                    <button type="submit" className="btn btn-primary">Iniciar Sesión</button>
+                                    <button type="submit" className="btn btn-success">Iniciar Sesión</button>
                                 </div>
                             </form>
                             <div className="text-center mt-3">
