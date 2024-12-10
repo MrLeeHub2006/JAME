@@ -50,7 +50,7 @@ export default function Navegacion() {
                                 </a>
                                 <ul className="dropdown-menu">
                                     <li><Link to={"/medicina"} className="dropdown-item" href="#">Agendamiento de Medicina</Link></li>
-                                    <li><a className="dropdown-item" href="#">Agendamiento Grooming</a></li>
+                                    <li><Link to={"/grooming"} className="dropdown-item" href="#">Agendamiento Grooming</Link></li>
                                 </ul>
                             </li>
                         </ul>

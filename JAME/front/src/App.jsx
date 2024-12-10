@@ -12,6 +12,7 @@ import PasarelaPago from "./pages/Cliente/PasarelaPago"
 import OlvidoContraseña from "./pages/Cliente/OlvidoContraseña";
 import Mascota from "./pages/Cliente/Mascota";
 import ServiciosMedicina from "./pages/Cliente/ServiciosMedicina";
+import AgendamientoGrooming from "./pages/Cliente/AgendamientoGrooming";
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
         <Route path="/recuperar" element={<OlvidoContraseña />} />
         <Route path="/mascota" element={<Mascota/>} />
         <Route path="/medicina" element={<ServiciosMedicina/>} />
+        <Route path="/grooming" element={<AgendamientoGrooming/>} />
 
 
       </Routes>
